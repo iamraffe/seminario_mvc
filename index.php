@@ -64,8 +64,22 @@ use \core\router,
     \helpers\url;
 
 //define routes
-Router::any('', '\controllers\welcome@index');
-Router::any('/subpage', '\controllers\welcome@subpage');
+Router::any('admin', '\controllers\admin\admin@index');
+Router::any('admin/login', '\controllers\admin\auth@login');
+Router::any('admin/logout', '\controllers\admin\auth@logout');
+
+Router::any('admin/users', '\controllers\admin\users@index');
+Router::any('admin/users/add', '\controllers\admin\users@add');
+Router::any('admin/users/edit/(:num)', '\controllers\admin\users@edit');
+
+Router::any('admin/ponentes', '\controllers\admin\ponentes@index');
+Router::any('admin/ponentes/add', '\controllers\admin\ponentes@add');
+Router::any('admin/ponentes/edit/(:num)', '\controllers\admin\ponentes@edit');
+Router::any('admin/ponentes/delete/(:num)', '\controllers\admin\ponentes@delete');
+
+
+Router::any('', '\controllers\seminario@index');
+Router::any('(:any)', '\controllers\seminario@ponente');
 
 //if no route found
 Router::error('\core\error@index');

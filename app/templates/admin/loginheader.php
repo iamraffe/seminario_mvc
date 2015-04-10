@@ -11,7 +11,7 @@
 		helpers\assets::css(array(			
 			'//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css',
 			'//cdn.datatables.net/plug-ins/1.10.6/integration/bootstrap/3/dataTables.bootstrap.css',
-			helpers\url::template_path() . 'css/style.css'			
+			helpers\url::admin_template_path() . 'css/style.css'			
 		))
 	?>
 
@@ -19,3 +19,4 @@
 <body>
 
 <div class="container">
+

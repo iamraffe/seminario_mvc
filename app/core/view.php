@@ -42,6 +42,15 @@ class View {
 		require "app/templates/". \helpers\Session::get('template') ."/$path.php";
 	}
 	
+	public static function renderadmintemplate($path,$data = false){
+		if (!headers_sent()) {
+			foreach (self::$headers as $header) {
+				header($header, true);
+			}
+		}
+		require "app/templates/admin/$path.php";
+	}
+
 	/**
 	 * add HTTP header to headers array 
 	 * @param  string  $header HTTP header text

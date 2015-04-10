@@ -31,6 +31,9 @@ class Url {
 		return DIR.'app/templates/'.Session::get('template').'/';
 	}
 
+	public static function admin_template_path(){
+		return DIR.'app/templates/admin/';
+	}
 	/**
 	 * converts plain text urls into HTML links, second argument will be
 	 * used as the url label <a href=''>$custom</a>
