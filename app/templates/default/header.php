@@ -4,7 +4,7 @@
 
 	<!-- Site meta -->
 	<meta charset="utf-8">
-	<title><?php echo $data['title'].' - '.SITETITLE;?></title>
+	<title><?php if($data['title'] != ''){echo $data['title'].' | '.SITETITLE;}else{echo SITETITLE;} ?></title>
 
 	<!-- CSS -->
 	<?php
@@ -19,3 +19,4 @@
 <body>
 
 <div class="container">
+

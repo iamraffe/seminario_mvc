@@ -79,7 +79,8 @@ Router::any('admin/ponentes/delete/(:num)', '\controllers\admin\ponentes@delete'
 
 
 Router::any('', '\controllers\seminario@index');
-Router::any('(:any)', '\controllers\seminario@ponente');
+Router::any('ponentes', '\controllers\ponentes\ponentes@index');
+Router::any('(:any)', '\controllers\ponentes\ponentes@ponente');
 
 //if no route found
 Router::error('\core\error@index');

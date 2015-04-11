@@ -33,6 +33,5 @@
 		</div>
 	</fieldset>	
 </form>
-
-<script src="http://js.nicedit.com/nicEdit-latest.js" type="text/javascript"></script>
-<script type="text/javascript">bkLib.onDomLoaded(nicEditors.allTextAreas);</script>
+<script src="//tinymce.cachefly.net/4.1/tinymce.min.js"></script>
+<script>tinymce.init({selector:'textarea', plugins: "paste",paste_as_text: true});</script>

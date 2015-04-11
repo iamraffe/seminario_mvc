@@ -1,6 +1,6 @@
-<?php namespace models\seminario;
+<?php namespace models\ponentes;
 
-class Seminario extends \core\model{
+class Ponentes extends \core\model{
 
 	public function getPonentes(){
 		return $this->_db->select("SELECT * FROM ".PREFIX."ponentes");

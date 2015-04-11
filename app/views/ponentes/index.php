@@ -1,5 +1,5 @@
 <div class="row">
-	<div class="col-md-12">
+	<div class="col-md-10 col-md-offset-1">
 		<?php 
 			if($data['ponentes']){
 				foreach ($data['ponentes'] as $row) {
