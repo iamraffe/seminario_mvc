@@ -77,10 +77,26 @@ Router::any('admin/ponentes/add', '\controllers\admin\ponentes@add');
 Router::any('admin/ponentes/edit/(:num)', '\controllers\admin\ponentes@edit');
 Router::any('admin/ponentes/delete/(:num)', '\controllers\admin\ponentes@delete');
 
+Router::any('admin/asistentes', '\controllers\admin\asistentes@index');
+Router::any('admin/asistentes/add', '\controllers\admin\asistentes@add');
+Router::any('admin/asistentes/edit/(:num)', '\controllers\admin\asistentes@edit');
+Router::any('admin/asistentes/delete/(:num)', '\controllers\admin\asistentes@delete');
 
+//HOME
 Router::any('', '\controllers\seminario@index');
+//PROGRAMA
+Router::any('programa', '\controllers\programa@index');
+//PONENTES
 Router::any('ponentes', '\controllers\ponentes\ponentes@index');
+//PERFIL PONENTES
 Router::any('(:any)', '\controllers\ponentes\ponentes@ponente');
+//COMO LLEGAR
+Router::any('como-llegar', '\controllers\comollegar@index');
+//REGISTRO
+Router::any('registro', '\controllers\registro@index');
+//CONDICIONES DE USO
+Router::any('condiciones', '\controllers\condiciones@index');
+
 
 //if no route found
 Router::error('\core\error@index');

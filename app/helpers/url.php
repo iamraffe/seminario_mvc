@@ -67,8 +67,14 @@ class Url {
 	public static function generateSafeSlug($slug) {
 
 		// transform url
+		$slug = strtolower($slug);
+		$slug = preg_replace('á', 'a', $slug);
+		$slug = preg_replace('é', 'e', $slug);
+		$slug = preg_replace('í', 'i', $slug);
+		$slug = preg_replace('ó', 'o', $slug);
+		$slug = preg_replace('ú', 'u', $slug);
 		$slug = preg_replace('/[^a-zA-Z0-9]/', '-', $slug);
-		$slug = strtolower(trim($slug, '-'));
+		$slug = trim($slug, '-');
 
 		//Removing more than one dashes
 		$slug = preg_replace('/\-{2,}/', '-', $slug);

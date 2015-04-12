@@ -11,7 +11,8 @@ class Ponentes extends \core\controller{
 	}
 
 	public function index(){
-		$data['title'] = '';
+		$data['title'] = 'Ponentes';
+		$data['isPonentes'] = 'class="active"';
 		$data['ponentes'] = $this->_model->getPonentes();
 
 		View::rendertemplate('header', $data);
@@ -21,7 +22,8 @@ class Ponentes extends \core\controller{
 	}
 
 	public function ponente($slug){
-		$data['title'] = '';
+		$data['title'] = $slug;
+		$data['isPonentes'] = 'class="active"';
 		$data['ponente'] = $this->_model->getPonente($slug);
 
 		View::rendertemplate('header', $data);

@@ -21,10 +21,13 @@ class Ponentes extends \core\controller{
 				<script type='text/javascript'>
 					function delponente(id, name){
 						if(confirm('¿Está seguro de que desea eliminar el ponente '+ name)){
-							window.location.href = '".DIR."admin/posts/delete/'+id;
+							window.location.href = '".DIR."admin/ponentes/delete/'+id;
 						}
 					}
-				</script>
+					$(document).ready(function() {
+					    $('#ponentes').dataTable();
+					} );
+				</script>				
 		";
 
 		View::renderadmintemplate('header', $data);

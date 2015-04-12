@@ -11,10 +11,5 @@
 	)) ;
 	echo $data['js'];
 ?>
-<script type="text/javascript">
-	$(document).ready(function() {
-    $('#ponentes').dataTable();
-} );
-</script>
 </body>
 </html>

@@ -2,21 +2,25 @@
 
 use \core\view;
 
-class Seminario extends \core\controller{
+class Programa extends \core\controller{
 	
 	private $_model;
 
 	public function __construct(){
-		$this->_model = new \models\seminario();
+		$this->_model = new \models\programa();
 	}
 
 	public function index(){
-		$data['title'] = '';
-		$data['isBienvenida'] = 'class="active"';
+		$data['title'] = 'Programa';
+		$data['isPrograma'] = 'class="active"';
+
 		View::rendertemplate('header', $data);
-		View::render('index', $data);
+		View::render('programa', $data);
 		View::rendertemplate('footer', $data);
 
 	}
+
+
+
 }
 ?>

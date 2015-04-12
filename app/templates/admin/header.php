@@ -37,13 +37,14 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Asistentes <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Ver tabla</a></li>
+            <li><a href="<?php echo DIR;?>admin/asistentes">Ver tabla</a></li>
             <li><a href="#">Descargar tabla</a></li>
           </ul>
         </li>
       </ul>
  			<ul class="nav navbar-nav navbar-right">
         <li><a href="<?php echo DIR;?>admin/users">Administradores</a></li>
+        <li><a href="<?php echo DIR;?>">Volver a la web</a></li>
         <li><a href="<?php echo DIR;?>admin/logout">Cerrar sesión</a></li>
       </ul>     
     </div><!-- /.navbar-collapse -->

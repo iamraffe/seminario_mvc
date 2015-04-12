@@ -2,21 +2,24 @@
 
 use \core\view;
 
-class Seminario extends \core\controller{
+class Condiciones extends \core\controller{
 	
 	private $_model;
 
 	public function __construct(){
-		$this->_model = new \models\seminario();
+		$this->_model = new \models\condiciones();
 	}
 
 	public function index(){
-		$data['title'] = '';
-		$data['isBienvenida'] = 'class="active"';
+		$data['title'] = 'Condiciones de uso';
+
 		View::rendertemplate('header', $data);
-		View::render('index', $data);
+		View::render('condiciones', $data);
 		View::rendertemplate('footer', $data);
 
 	}
+
+
+
 }
 ?>
