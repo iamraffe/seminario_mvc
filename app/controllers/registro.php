@@ -67,7 +67,5 @@ class Registro extends \core\controller{
 
 	}
 
-
-
 }
 ?>

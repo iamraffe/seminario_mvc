@@ -2,6 +2,7 @@
 
 use \helpers\url,
 		\helpers\session,
+		\helpers\exportexcel,
 		\core\view;
 
 class Asistentes extends \core\controller{
@@ -155,7 +156,17 @@ class Asistentes extends \core\controller{
 
 				Url::redirect('admin/asistentes');
 
-	}			
+	}
+
+	public function export(){
+
+		ExportExcel::export($this->_model->getAsistentes());
+
+		Session::set('message', 'La base de datos se ha descargado correctamente');
+
+		Url::redirect('admin/asistentes');
+
+	}				
 }
 
 ?>

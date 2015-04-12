@@ -1,158 +1,290 @@
-html,body{font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif; margin: 0; padding: 0; color: #5e5e5e;}
-
-/* TEXT MODES */
-.bold{
-  font-weight: bold;
+/* mixins, variables, etc. */
+.Box_sizing {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
-
-.italic{
-  font-style: italic;
-}
-
-.block{
-  display: block;
-}
-
-.center{
-  text-align: center;
-}
-/* END TEXT MODES */
-.container-fluid{
+/* universal */
+html,
+body {
+  margin: 0;
   padding: 0;
+  color: #5e5e5e;
 }
-
-header{
+html * {
+  font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif !important;
+}
+.container-fluid,
+.container {
+  padding: 0 !important;
+}
+header {
   padding-top: 0;
   margin-top: 0;
-  
 }
-
-  #logo-placeholder{
-    background-color: #4b4f54;
+section {
+  overflow: auto;
+}
+textarea {
+  resize: vertical;
+}
+.center {
+  text-align: center;
+}
+.center h1 {
+  margin-bottom: 10px;
+}
+/* TEXT MODES */
+.bold {
+  font-weight: bold;
+}
+.italic {
+  font-style: italic;
+}
+.block {
+  display: block;
+}
+.center {
+  text-align: center;
+}
+.invisible {
+  display: none !important;
+}
+/* header */
+#logo-placeholder {
+  background-color: #4b4f54;
+  display: block;
+  overflow: hidden;
+}
+#logo-placeholder #logo-seminario {
+  max-width: 65%;
+  padding: 2.5%;
+  float: left;
+}
+#logo-placeholder #logo {
+  max-width: 25%;
+  padding: 2.5%;
+  float: right;
+}
+#navbar-primary.navbar-default {
+  background: #efefef;
+  border: none;
+}
+#navbar-primary.navbar-default .navbar-nav {
+  width: 100%;
+  text-align: center;
+}
+#navbar-primary.navbar-default .navbar-nav > li {
+  display: inline-block;
+  float: none;
+}
+#navbar-primary.navbar-default .navbar-nav > li > a {
+  color: #4b4f54;
+  font-size: 1.25em;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 18px;
+}
+#navbar-primary.navbar-default .navbar-nav > li.active > a {
+  font-weight: bold;
+  background: transparent;
+  border-bottom: 3px solid #4b4f54;
+  box-shadow: none;
+}
+@media (max-width: 767px) {
+  #navbar-primary.navbar-default .navbar-nav {
+    margin: 0 auto;
+  }
+  #navbar-primary.navbar-default .navbar-nav > li {
     display: block;
-    overflow: hidden;
   }
-    #logo-seminario {
-      max-width: 65%; 
-      padding: 2.5%; 
-      float: left;
-    }
-    #logo{
-      max-width: 25%; 
-      padding: 2.5%;
-      float: right;
-    }
-
-  #navbar-primary.navbar-default {
-    background: #efefef;
-    border: none;
-   
-  } 
-    #navbar-primary.navbar-default .navbar-nav { 
-        width: 100%;
-        text-align: center;
-
-    }
-  @media(max-width: 767px){
-    #navbar-primary.navbar-default .navbar-nav { 
-        margin: 0 auto;
-    }
-  }
-      #navbar-primary.navbar-default .navbar-nav  > li {
-        display: inline-block;
-        float: none;
-
-      }
-    @media(max-width: 767px){
-      #navbar-primary.navbar-default .navbar-nav  > li {
-          display: block;
-      }
-    }
-        #navbar-primary.navbar-default .navbar-nav  > li  > a {
-          color: #4b4f54;
-          font-size: 1.25em;
-          padding-left: 30px;
-          padding-right: 30px;
-          padding-top: 18px;
-        }
-
-        #navbar-primary.navbar-default .navbar-nav > li.active > a{
-          font-weight: bold;
-          background: transparent;
-          border-bottom: 3px solid #4b4f54;
-          box-shadow: none;
-        } 
-  footer{
-    padding: 20px;
-    background-color: #4b4f54;
-    color: white;
-    text-align: center;
-    font-size: 1.25em;
-  }
-    footer p{
-
-    }
-    footer a{
-      color: white;
-    }
-    /* HOME */
-  .jumbotron{
-    background-color: #e5e5e5;
-    border-radius: 0 !important;
-    text-align: center;
-    overflow-y: hidden;
-    height: 325px;
-  }
-  .jumbotron .big-text{
-    
-  }
-  .jumbotron h1{
-    font-size: 2.5em;
-    font-weight: 400;
-  }
-  .jumbotron .big-text img{
-    width: 15%;
-  }
-@media(max-width: 767px){
-  .jumbotron{
+}
+footer {
+  padding: 20px;
+  background-color: #4b4f54;
+  color: white;
+  text-align: center;
+  font-size: 1.25em;
+}
+footer a {
+  color: white;
+}
+/* HOME */
+.jumbotron {
+  background-color: #e5e5e5;
+  border-radius: 0 !important;
+  text-align: center;
+  overflow-y: hidden;
+  height: 325px;
+}
+.jumbotron .big-text img {
+  width: 15%;
+}
+.jumbotron h1 {
+  font-size: 2.5em;
+  font-weight: 400;
+}
+@media (max-width: 767px) {
+  .jumbotron {
     height: auto;
   }
 }
-  .letter-intro h2{
-    font-size: 1em;
-    line-height: 0.25em;
-
-  }
-
-  .letter{
-    padding-bottom: 50px;
-  }
-
-    .letter-content h3{
-      font-size: 1.35em;
-      line-height: 2.5em;
-
-    }
-
-    .letter-content > p{
-      line-height: 1.75em;
-      font-size: 1.25em;
-
-    }
-
-
-    /* CONDICIONES */
-  .condiciones{
-    font-size: 1.25em;
-  }
-    .condiciones h2{
-
-    }
-
-    .condiciones h3{
-
-    }
-
-    .condiciones p{
-
-    }
+.letter-intro h2 {
+  font-size: 1em;
+  line-height: 0.25em;
+}
+.letter {
+  padding-bottom: 50px;
+}
+.letter-content h3 {
+  font-size: 1.35em;
+  line-height: 2.5em;
+}
+.letter-content p {
+  line-height: 1.75em;
+  font-size: 1.25em;
+}
+/* PONENTES OVERALL*/
+ul#ponentes-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 50px 0 50px 12.5%;
+}
+ul#ponentes-list li {
+  margin-bottom: 15px;
+  font-size: 1.25em;
+  padding-left: 35px;
+  font-style: italic;
+}
+ul#ponentes-list li.ponente-name {
+  background: url('../../../../img/bullet.png') no-repeat left center;
+  background-size: 20px 10px;
+  height: 25px;
+  padding-left: 30px;
+  padding-top: 0px;
+  font-style: normal;
+}
+/*  PONENTES DETAIL */
+#ponente {
+  margin: 50px 0px;
+}
+.member {
+  overflow: hidden;
+  text-align: center;
+  border: 1px solid #ddd;
+  background-color: #ffffff;
+  padding: 25px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 1px 1px 2px 0px rgba(180, 180, 180, 0.2);
+  -moz-box-shadow: 1px 1px 2px 0px rgba(180, 180, 180, 0.2);
+  box-shadow: 1px 1px 2px 0px rgba(180, 180, 180, 0.2);
+}
+.member-img img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+.member-img {
+  margin: -25px -25px 15px -25px;
+}
+.member h2 {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+.member .member-role {
+  color: #bfbfbf;
+  font-size: 11px;
+  margin-bottom: 10px;
+}
+.member p {
+  margin: 0;
+}
+.profile {
+  border: 1px solid #ddd;
+  text-align: center;
+  padding: 10px;
+  border-radius: 3px;
+  box-shadow: 1px 1px 2px 0px rgba(180, 180, 180, 0.2);
+  -webkit-box-shadow: 1px 1px 2px 0px rgba(180, 180, 180, 0.2);
+  -moz-box-shadow: 1px 1px 2px 0px rgba(180, 180, 180, 0.2);
+}
+.profile .profile-pic {
+  max-width: 100%;
+}
+.caption {
+  border-top: 1px solid #ddd;
+}
+.caption h1 {
+  text-transform: uppercase;
+  font-size: 1em;
+}
+.caption h2 {
+  font-size: 0.8em;
+  color: #bfbfbf;
+}
+/* DIRECCIONES */
+#map {
+  width: 100%;
+  height: 400px;
+}
+.accordion .accordion-title {
+  border: 1px solid #ddd;
+  display: block;
+  background-image: linear-gradient(bottom, #f7f7f7 0%, #ffffff 100%);
+  background-image: -o-linear-gradient(bottom, #f7f7f7 0%, #ffffff 100%);
+  background-image: -moz-linear-gradient(bottom, #f7f7f7 0%, #ffffff 100%);
+  background-image: -webkit-linear-gradient(bottom, #f7f7f7 0%, #ffffff 100%);
+  background-image: -ms-linear-gradient(bottom, #f7f7f7 0%, #ffffff 100%);
+  background-color: #F9F9F9;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0px 1px 1px 0px rgba(180, 180, 180, 0.1);
+  -moz-box-shadow: 0px 1px 1px 0px rgba(180, 180, 180, 0.1);
+  box-shadow: 0px 1px 1px 0px rgba(180, 180, 180, 0.1);
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.accordion .accordion-title h2 {
+  margin: 0;
+}
+.accordion .accordion-title a {
+  display: block;
+  padding: 10px 15px 10px 15px;
+  background: url("../../../../img/accordion-open.png") no-repeat right center;
+  text-decoration: none;
+  font-size: 0.5em;
+  color: #999999 !important;
+}
+.accordion .accordion-title a i {
+  margin: 0px 8px 0 0px;
+  opacity: 0.4;
+}
+.accordion .accordion-title.active a {
+  color: #444444 !important;
+  background: url("../../../../img/accordion-close.png") no-repeat right center;
+}
+.accordion .accordion-title.active a i {
+  opacity: 0.95;
+}
+.accordion .accordion-inner {
+  padding: 2px 12px 14px 12px;
+  display: none;
+}
+.accordion .accordion-inner div {
+  max-width: 100%;
+}
+.accordion .accordion-inner div h3 {
+  font-size: 1em;
+}
+.accordion .accordion-inner.default {
+  display: block;
+}
+/* CONDICIONES */
+.condiciones {
+  font-size: 1.25em;
+}
