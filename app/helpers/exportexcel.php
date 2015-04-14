@@ -16,7 +16,7 @@ class ExportExcel{
 		    ->setWidth(16);		
 		$objPHPExcel->getActiveSheet(0)   
 		    ->getColumnDimension('C')
-		    ->setWidth(18);		
+		    ->setWidth(20);		
 		$objPHPExcel->getActiveSheet(0)   
 		    ->getColumnDimension('D')
 		    ->setWidth(16);		
@@ -28,13 +28,13 @@ class ExportExcel{
 		    ->setWidth(16);		
 		$objPHPExcel->getActiveSheet(0)   
 		    ->getColumnDimension('G')
-		    ->setWidth(20);		
+		    ->setWidth(22);		
 		$objPHPExcel->getActiveSheet(0)   
 		    ->getColumnDimension('H')
 		    ->setWidth(16);		
 		$objPHPExcel->getActiveSheet(0)
 		    ->getColumnDimension('I')
-		    ->setWidth(16);
+		    ->setWidth(22);
 
 		//Tamaño filas    
 		$objPHPExcel->getActiveSheet(0)

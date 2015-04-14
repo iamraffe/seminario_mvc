@@ -1,3 +1,7 @@
+<ul class="breadcrumb">
+	<li><a href="<?php echo DIR;?>">Inicio</a></li>
+	<li>Cómo llegar</li>
+</ul>
 <div class="row">
 	<div class="col-md-8 col-md-offset-2">
 		<iframe id="map" src="https://mapsengine.google.com/map/u/0/embed?mid=zSBBmPYybDpM.kgYSBLH1Ij-c"></iframe>

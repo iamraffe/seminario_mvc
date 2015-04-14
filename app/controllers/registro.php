@@ -53,6 +53,27 @@ class Registro extends \core\controller{
 			if(!$error){
 
 				$data = array('asistenteName' => $asistenteName, 'asistentePrimerApellido' => $asistentePrimerApellido, 'asistenteSegundoApellido' => $asistenteSegundoApellido, 'asistenteCentro' => $asistenteCentro, 'asistenteCiudad' => $asistenteCiudad, 'asistenteCargo' => $asistenteCargo, 'asistenteEmail' => $asistenteEmail, 'asistenteTelefono' => $asistenteTelefono, 'asistenteTelefonoSecundario' => $asistenteTelefonoSecundario);
+				
+				$body = '
+						<p>Nombre: '.$asistenteName.'</p>
+						<p>Apellidos: '.$asistentePrimerApellido.' '.$asistenteSegundoApellido.'</p>
+						<p>Centro: '.$asistenteCentro.'</p>
+						<p><p>Ciudad: '.$asistenteCiudad.'</p>
+						<p>Cargo: '.$asistenteCargo.'</p>
+						<p>Correo Electrónico: '.$asistenteEmail.'</p>
+						<p>Telefóno: '.$asistenteTelefono.'</p>
+				';
+
+				if($asistenteTelefonoSecundario != ''){
+					$body .= '<p>Telefóno secundario: '.$asistenteTelefonoSecundario.'</p>';
+				}
+
+				$mail = new \helpers\phpmailer\mail();
+				$mail -> CharSet = 'UTF-8';
+				$mail->addAddress('raffe90@gmail.com', 'Rafa Ramírez');
+				$mail->subject('Nuevo Registro en la Base de Datos [Seminario]');
+				$mail->body($body);
+				$mail->send();
 
 				$this->_model->insertAsistente($data);
 

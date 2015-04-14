@@ -67,12 +67,18 @@ class Url {
 	public static function generateSafeSlug($slug) {
 
 		// transform url
-		$slug = strtolower($slug);
-		$slug = preg_replace('á', 'a', $slug);
-		$slug = preg_replace('é', 'e', $slug);
-		$slug = preg_replace('í', 'i', $slug);
-		$slug = preg_replace('ó', 'o', $slug);
-		$slug = preg_replace('ú', 'u', $slug);
+		$slug = ereg_replace("[áàâãª]","a",$slug);
+		$slug = ereg_replace("[ÁÀÂÃ]","A",$slug);
+		$slug = ereg_replace("[éèê]","e",$slug);
+		$slug = ereg_replace("[ÉÈÊ]","E",$slug);
+		$slug = ereg_replace("[íìî]","i",$slug);
+		$slug = ereg_replace("[ÍÌÎ]","I",$slug);
+		$slug = ereg_replace("[óòôõº]","o",$slug);
+		$slug = ereg_replace("[ÓÒÔÕ]","O",$slug);
+		$slug = ereg_replace("[úùû]","u",$slug);
+		$slug = ereg_replace("[ÚÙÛ]","U",$slug);
+		$slug = str_replace("ñ","n",$slug);
+		$slug = str_replace("Ñ","N",$slug);
 		$slug = preg_replace('/[^a-zA-Z0-9]/', '-', $slug);
 		$slug = trim($slug, '-');
 
