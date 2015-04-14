@@ -25,6 +25,9 @@ class Auth extends \core\controller {
 				$error[] = 'Usuario o contraseña incorrectos';
 			}
 			else{
+				$id = $model->getId($username);
+				Session::set('currentusername', $username);
+				Session::set('currentid', $id);
 				Session::set('loggedin', true);
 				Url::redirect('admin');
 				

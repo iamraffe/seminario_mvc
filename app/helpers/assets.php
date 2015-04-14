@@ -56,4 +56,10 @@ class Assets {
 		static::resource($files, 'css');
 	}
 
+	public function isActive($path){
+		$current_url =  "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+		 if($current_url == $path){
+        echo 'class="active"';}
+	}
+
 }
