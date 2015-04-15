@@ -19,14 +19,18 @@ class Ponentes extends \core\controller{
 		$data['ponentes'] = $this->_model->getPonentes();
 		$data['js'] = "
 				<script type='text/javascript'>
+					$(document).ready(function() {
+						$('#ponentes').dataTable( {
+		            'language': {
+		                'url': 'dataTables.german.lang'
+		            }
+		        } );		
+		      } );  	
 					function delponente(id, name){
 						if(confirm('¿Está seguro de que desea eliminar el ponente '+ name)){
 							window.location.href = '".DIR."admin/ponentes/delete/'+id;
 						}
 					}
-					$(document).ready(function() {
-					    $('#ponentes').dataTable();
-					} );
 				</script>				
 		";
 

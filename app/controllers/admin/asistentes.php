@@ -20,14 +20,15 @@ class Asistentes extends \core\controller{
 		$data['asistentes'] = $this->_model->getAsistentes();
 		$data['js'] = "
 				<script type='text/javascript'>
+					$(document).ready(function() {
+					    $('#asistentes').dataTable();
+					} );				
 					function delasistente(id, name){
 						if(confirm('¿Está seguro de que desea eliminar al asistente '+ name)){
 							window.location.href = '".DIR."admin/asistentes/delete/'+id;
 						}
 					}
-					$(document).ready(function() {
-					    $('#asistentes').dataTable();
-					} );
+
 				</script>				
 		";
 

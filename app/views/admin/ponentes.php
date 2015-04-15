@@ -26,6 +26,7 @@
 		<th>Opciones</th>
 	</tr>
 </tfoot>
+
 <tbody>
 <?php 
 	if($data['ponentes']){
@@ -43,6 +44,6 @@
 		}
 	}
 ?>	
-<tbody>
+</tbody>
 </table>
 

@@ -1,5 +1,6 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="<?php echo LANGUAGE_CODE; ?>">
 
 <head>
 
@@ -73,8 +74,8 @@
                         <a href="<?php echo DIR;?>admin/ "><i class="fa fa-fw fa-dashboard"></i> Inicio</a>
                     </li>
                     <li <?php helpers\assets::isActive(DIR.'admin/ponentes'); helpers\assets::isActive(DIR.'admin/ponentes/add'); ?>>
-                        <a href="javascript:;" data-toggle="collapse" data-target="#ponentes"><i class="fa fa-fw fa-table"></i> Ponentes <i class="fa fa-fw fa-caret-down"></i></a>
-                        <ul id="ponentes" class="collapse">
+                        <a href="javascript:;" data-toggle="collapse" data-target="#ponentes-submenu"><i class="fa fa-fw fa-table"></i> Ponentes <i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="ponentes-submenu" class="collapse">
                             <li>
                                 <a href="<?php echo DIR;?>admin/ponentes">Ver ponentes</a>
                             </li>
@@ -84,8 +85,8 @@
                         </ul>
                     </li>
                     <li <?php helpers\assets::isActive(DIR.'admin/asistentes'); helpers\assets::isActive(DIR.'admin/asistentes/add'); ?>>
-                        <a href="javascript:;" data-toggle="collapse" data-target="#asistentes"><i class="fa fa-fw fa-table"></i> Asistentes <i class="fa fa-fw fa-caret-down"></i></a>
-                        <ul id="asistentes" class="collapse">
+                        <a href="javascript:;" data-toggle="collapse" data-target="#asistentes-submenu"><i class="fa fa-fw fa-table"></i> Asistentes <i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="asistentes-submenu" class="collapse">
                             <li>
                                 <a href="<?php echo DIR;?>admin/asistentes">Ver Asistentes</a>
                             </li>

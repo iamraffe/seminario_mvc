@@ -55,6 +55,6 @@
 		}
 	}
 ?>	
-<tbody>
+</tbody>
 </table>
 
