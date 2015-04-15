@@ -71,7 +71,7 @@
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav navbar-default side-nav">
                     <li <?php helpers\assets::isActive(DIR.'admin'); ?>>
-                        <a href="<?php echo DIR;?>admin/ "><i class="fa fa-fw fa-dashboard"></i> Inicio</a>
+                        <a href="<?php echo DIR;?>admin/ "><span class="fa fa-fw fa-dashboard"></span> Inicio</a>
                     </li>
                     <li <?php helpers\assets::isActive(DIR.'admin/ponentes'); helpers\assets::isActive(DIR.'admin/ponentes/add'); ?>>
                         <a href="javascript:;" data-toggle="collapse" data-target="#ponentes-submenu"><i class="fa fa-fw fa-table"></i> Ponentes <i class="fa fa-fw fa-caret-down"></i></a>

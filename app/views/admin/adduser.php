@@ -1,7 +1,7 @@
 <ul class="breadcrumb">
-	<li><a href="<?php echo DIR;?>admin">Panel de Administración</a></li>
-	<li><a href="<?php echo DIR;?>admin/users">Administadores</a></li>
-	<li>Agregar administrador</li>
+	<li><span class="fa fa-fw fa-dashboard"></span> <a href="<?php echo DIR;?>admin">Panel de Administración</a></li>
+	<li><span class="fa fa-fw fa-users"></span> <a href="<?php echo DIR;?>admin/users">Administadores</a></li>
+	<li><span class="fa fa-fw fa-dashboard"></span> Agregar administrador</li>
 </ul>
 <?php echo \core\error::display($error); ?>
 <form action="" method="post" role="form">

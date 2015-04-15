@@ -1,7 +1,7 @@
 <ul class="breadcrumb">
-	<li><a href="<?php echo DIR;?>admin">Panel de Administración</a></li>
-	<li><a href="<?php echo DIR;?>admin/ponentes">Asistentes</a></li>
-	<li>Agregar asistente</li>
+	<li><span class="fa fa-fw fa-dashboard"></span> <a href="<?php echo DIR;?>admin">Panel de Administración</a></li>
+	<li><span class="fa fa-fw fa-users"></span> <a href="<?php echo DIR;?>admin/ponentes">Asistentes</a></li>
+	<li><span class="fa fa-fw fa-user-plus"></span> Agregar asistente</li>
 </ul>
 
 <?php echo \core\error::display($error) ?>

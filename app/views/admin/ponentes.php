@@ -1,6 +1,6 @@
 <ul class="breadcrumb">
-	<li><a href="<?php echo DIR;?>admin">Panel de Administración</a></li>
-	<li>Ponentes</li>
+	<li><span class="fa fa-fw fa-dashboard"></span><a href="<?php echo DIR;?>admin">Panel de Administración</a></li>
+	<li><span class="fa fa-fw fa-users"></span> Ponentes</li>
 </ul>
 <h1>Ponentes</h1>
 <?php echo \helpers\session::pull('message'); ?>
