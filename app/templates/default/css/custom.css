@@ -60,7 +60,35 @@ a:focus {
 .invisible {
   display: none !important;
 }
+/* MARGIN & PADDING CLASSES*/
+.margin-top-10 {
+  margin-top: 10px;
+}
+.margin-top-20 {
+  margin-top: 20px;
+}
+.margin-top-30 {
+  margin-top: 30px;
+}
+.margin-top-40 {
+  margin-top: 40px;
+}
+.margin-top-50 {
+  margin-top: 50px;
+}
 /* header */
+@media (min-width: 769px) {
+  .navbar-brand {
+    display: none;
+  }
+}
+a.navbar-brand {
+  padding: 10px;
+  margin-left: 15px;
+}
+img.logo-seminario {
+  max-height: 30px;
+}
 #logo-placeholder {
   background-color: #4b4f54;
   display: block;
@@ -75,6 +103,11 @@ a:focus {
   max-width: 25%;
   padding: 2.5%;
   float: right;
+}
+@media (max-width: 768px) {
+  #logo-placeholder {
+    display: none;
+  }
 }
 #navbar-primary.navbar-default {
   background: #efefef;
@@ -121,8 +154,11 @@ footer a {
 }
 /* HOME */
 .jumbotron {
-  background-color: #e5e5e5;
-  border-radius: 0 !important;
+  /*background-color: #e5e5e5;
+    border-radius: 0 !important;*/
+  background: #00b1ac;
+  border-radius: 5px !important;
+  color: white !important;
   text-align: center;
   overflow-y: hidden;
   height: 325px;
@@ -147,12 +183,79 @@ footer a {
   padding-bottom: 50px;
 }
 .letter-content h3 {
-  font-size: 1.35em;
+  font-size: 1.5em;
   line-height: 2.5em;
 }
 .letter-content p {
   line-height: 1.75em;
   font-size: 1.25em;
+}
+/* PROGRAMA */
+.programa-seminario {
+  padding-bottom: 50px;
+}
+.programa-seminario p {
+  margin: 0;
+  font-size: 1em;
+}
+.programa-seminario .programa-header .program-time {
+  position: relative;
+}
+@media (min-width: 769px) {
+  .programa-seminario .programa-header .program-time {
+    min-height: 40px;
+  }
+}
+.programa-seminario .programa-header .program-time p {
+  height: auto;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.programa-seminario .programa-subtitle {
+  margin-top: 5px;
+}
+@media (max-width: 768px) {
+  .programa-seminario .programa-subtitle {
+    text-align: center;
+  }
+  .programa-seminario .programa-subtitle h1 {
+    margin-bottom: 10px;
+  }
+}
+.programa-seminario ul.lista-ponentes {
+  border-top: 1px solid white;
+  margin-top: 5px;
+  padding-top: 5px;
+}
+.programa-seminario ul.lista-ponentes li .ponente-name {
+  font-weight: bold;
+}
+@media (max-width: 768px) {
+  .programa-seminario .program-event {
+    text-align: center;
+  }
+  .programa-seminario .program-event h1 {
+    margin-bottom: 10px;
+  }
+}
+.green-background {
+  background: #00b1ac;
+  color: white;
+  font-weight: bold;
+}
+@media (min-width: 769px) {
+  .green-background.program-time {
+    border-right: 1px solid white;
+  }
+}
+.green-background.program-time > p {
+  font-weight: bold;
+}
+.light-gray-background {
+  background: rgba(191, 191, 191, 0.12);
 }
 /* PONENTES OVERALL*/
 .thumb {

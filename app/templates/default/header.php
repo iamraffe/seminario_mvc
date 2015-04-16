@@ -42,12 +42,15 @@
 		  <div class="container-fluid">
 		    <!-- Brand and toggle get grouped for better mobile display -->
 		    <div class="navbar-header">
+
 		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-primary-collapse">
 		        <span class="sr-only">Menú</span>
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 		      </button>
+		    		<a class="navbar-brand" href="<?php echo DIR;?>"><img class="logo-seminario" src="<?php echo DIR;?>/img/logoLogin.svg"></a>
+	      
 		    </div>
 		    <div class="collapse navbar-collapse" id="navbar-primary-collapse">
 		      <ul class="nav navbar-nav">

@@ -7,7 +7,8 @@
 						<a class="btn btn-default" href="<?php echo DIR;?>registro">Inscríbete <span class="glyphicon glyphicon-pencil"></span></a>
 					</div>
 					<div class="col-md-5 hidden-xs hidden-sm">
-						<img src="img/raimon.png">
+						<img src="img/peps.svg" style="width: 85%;"> 
+						<!--<img src="img/raimon.png"> -->
 					</div>
 				</div>
 			</div>	
