@@ -1,6 +1,6 @@
 <ul class="breadcrumb">
-	<li><a href="<?php echo DIR;?>">Inicio</a></li>
-	<li>Programa</li>
+	<li><span class="fa fa-home aqua"></span><a href="<?php echo DIR;?>"> Inicio</a></li>
+	<li><span class="fa fa-th-list"> Programa</li>
 </ul>
 <div class="row">
 	<div class="col-sm-10 col-sm-offset-1 programa-seminario">

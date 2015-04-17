@@ -1,3 +1,7 @@
+	<ul class="breadcrumb">
+	<li><span class="fa fa-home aqua"></span><a href="<?php echo DIR;?>"> Inicio</a></li>
+	<li><span class="fa fa-file-text-o"></span> Condiciones de uso</li>
+</ul>
 	<div class="condiciones">	
 		<div class="row">
 			<h2>Condiciones de uso</h2>

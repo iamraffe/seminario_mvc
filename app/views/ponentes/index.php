@@ -1,6 +1,6 @@
 <ul class="breadcrumb">
-	<li><a href="<?php echo DIR;?>">Inicio</a></li>
-	<li>Ponentes</li>
+	<li><span class="fa fa-home aqua"></span><a href="<?php echo DIR;?>"> Inicio</a></li>
+	<li><span class="fa fa-users"></span> Ponentes</li>
 </ul>
 <div class="row">
 	<div class="col-md-10 col-md-offset-1">

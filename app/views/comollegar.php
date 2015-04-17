@@ -1,6 +1,6 @@
 <ul class="breadcrumb">
-	<li><a href="<?php echo DIR;?>">Inicio</a></li>
-	<li>Cómo llegar</li>
+	<li><span class="fa fa-home aqua"></span><a href="<?php echo DIR;?>"> Inicio</a></li>
+	<li><span class="fa fa-map-marker"></span> Cómo llegar</li>
 </ul>
 <div class="row">
 	<div class="col-md-8 col-md-offset-2">
@@ -16,12 +16,12 @@
 		</div>
 		<div class="accordion-inner default">
 			<div class="row">
-				<div class="col-md-5 col-xs-6 col-md-offset-1 col-xs-offset-1">
+				<div class="col-md-5 col-sm-6 col-md-offset-1 col-sm-offset-1">
 					<h3 class="bold">Fundación Jiménez Díaz. Aula Magna.</h3>
 					<h3>Avda. Reyes Católicos, 2</h3>
 					<h3>28040 – Madrid</h3>
 				</div>
-				<div class="col-md-5 col-xs-3">
+				<div class="col-md-5 col-sm-3">
 					<img src="img/logo-fundacion-jimenez-diaz.png" alt="Fundación Jiménez Díaz">
 				</div>
 			</div>					
@@ -32,11 +32,12 @@
 		</div>
 		<div class="accordion-inner">
 			<div class="row">
-				<div class="col-xs-3 col-md-offset-1 col-xs-offset-1">
-					<img src="img/icono-metro.png" alt="Metro de Madrid">
+				<div class="col-sm-3 col-md-offset-1 col-sm-offset-1">
+					<!-- <img src="img/icono-metro.png" alt="Metro de Madrid"> -->
+					<span class="fa fa-subway fa-5x aqua block center margin-top-10"></span>
 				</div>			
-				<div class="col-xs-6">
-					<ul>
+				<div class="col-sm-6">
+					<ul class="margin-top-10">
 						<li>Moncloa</li>
 						<li>Islas Filipinas</li>
 					</ul>
@@ -49,18 +50,19 @@
 		</div>
 		<div class="accordion-inner">
 			<div class="row">
-				<div class="col-xs-2 col-md-offset-1 col-xs-offset-1">
-					<img src="img/icono-autobus.png" alt="Autobuses de Madrid">
+				<div class="col-sm-2 col-md-offset-1 col-sm-offset-1">
+					<!-- <img src="img/icono-autobus.png" alt="Autobuses de Madrid"> -->
+					<span class="fa fa-bus fa-5x aqua block center margin-top-10"></span>
 				</div>			
-				<div class="col-xs-4">
-					<ul>
+				<div class="col-sm-4">
+					<ul  class="margin-top-10">
 						<li>Línea 1</li>
 						<li>Línea 12</li>
 						<li>Línea 44</li>
 						<li>Línea 82</li>
 					</ul>
 				</div>
-				<div class="col-xs-4">
+				<div class="col-sm-4">
 					<ul>
 						<li>Línea 132</li>
 						<li>Línea C</li>

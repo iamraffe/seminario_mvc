@@ -12,7 +12,10 @@ body {
   color: #5e5e5e;
 }
 html * {
-  font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif !important;
+  font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+}
+.aqua {
+  color: #00b1ac !important;
 }
 .container-fluid {
   padding: 0 !important;
@@ -38,11 +41,68 @@ a:focus {
   color: #039b96;
   outline: none !important;
 }
-.center {
-  text-align: center;
+.btn-seminario-aqua {
+  color: #ffffff;
+  background-color: #00B1AC;
+  border-color: #00B1AC;
 }
-.center h1 {
-  margin-bottom: 10px;
+.btn-seminario-aqua:hover,
+.btn-seminario-aqua:focus,
+.btn-seminario-aqua:active,
+.btn-seminario-aqua.active,
+.open .dropdown-toggle.btn-seminario-aqua {
+  color: #ffffff;
+  background-color: #00A6A0;
+  border-color: #00B1AC;
+}
+.btn-seminario-aqua:active,
+.btn-seminario-aqua.active,
+.open .dropdown-toggle.btn-seminario-aqua {
+  background-image: none;
+}
+.btn-seminario-aqua.disabled,
+.btn-seminario-aqua[disabled],
+fieldset[disabled] .btn-seminario-aqua,
+.btn-seminario-aqua.disabled:hover,
+.btn-seminario-aqua[disabled]:hover,
+fieldset[disabled] .btn-seminario-aqua:hover,
+.btn-seminario-aqua.disabled:focus,
+.btn-seminario-aqua[disabled]:focus,
+fieldset[disabled] .btn-seminario-aqua:focus,
+.btn-seminario-aqua.disabled:active,
+.btn-seminario-aqua[disabled]:active,
+fieldset[disabled] .btn-seminario-aqua:active,
+.btn-seminario-aqua.disabled.active,
+.btn-seminario-aqua[disabled].active,
+fieldset[disabled] .btn-seminario-aqua.active {
+  background-color: #00B1AC;
+  border-color: #00B1AC;
+}
+.btn-seminario-aqua .badge {
+  color: #00B1AC;
+  background-color: #ffffff;
+}
+/* button custom: 177, 88, 39, 5*/
+.btn-custom {
+  background-color: #0aa39b !important;
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0dd2c9", endColorstr="#0aa29b");
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#0dd2c9), to(#0aa29b));
+  background-image: -moz-linear-gradient(top, #0dd2c9, #0aa29b);
+  background-image: -ms-linear-gradient(top, #0dd2c9, #0aa29b);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #0dd2c9), color-stop(100%, #0aa29b));
+  background-image: -webkit-linear-gradient(top, #0dd2c9, #0aa29b);
+  background-image: -o-linear-gradient(top, #0dd2c9, #0aa29b);
+  background-image: linear-gradient(#0dd2c9, #0aa29b);
+  border-color: #0aa29b #0aa29b #0a9790;
+  color: #fff !important;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.16);
+  -webkit-font-smoothing: antialiased;
+}
+@media (max-width: 768px) {
+  ul.breadcrumb {
+    display: none;
+  }
 }
 /* TEXT MODES */
 .bold {
@@ -56,6 +116,9 @@ a:focus {
 }
 .center {
   text-align: center;
+}
+.center h1 {
+  margin-bottom: 10px;
 }
 .invisible {
   display: none !important;
@@ -77,7 +140,7 @@ a:focus {
   margin-top: 50px;
 }
 /* header */
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .navbar-brand {
     display: none;
   }
@@ -99,18 +162,25 @@ img.logo-seminario {
   padding: 2.5%;
   float: left;
 }
+@media (max-width: 1024px) {
+  #logo-placeholder #logo-seminario {
+    display: block;
+    margin: 0 auto;
+    float: none;
+  }
+}
 #logo-placeholder #logo {
   max-width: 25%;
   padding: 2.5%;
   float: right;
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   #logo-placeholder {
     display: none;
   }
 }
 #navbar-primary.navbar-default {
-  background: #efefef;
+  background: rgba(191, 191, 191, 0.12);
   border: none;
 }
 #navbar-primary.navbar-default .navbar-nav {
@@ -122,7 +192,7 @@ img.logo-seminario {
   float: none;
 }
 #navbar-primary.navbar-default .navbar-nav > li > a {
-  color: #4b4f54;
+  color: #5e5e5e;
   font-size: 1.25em;
   padding-left: 30px;
   padding-right: 30px;
@@ -131,7 +201,7 @@ img.logo-seminario {
 #navbar-primary.navbar-default .navbar-nav > li.active > a {
   font-weight: bold;
   background: transparent;
-  border-bottom: 3px solid #4b4f54;
+  border-bottom: 3px solid #5e5e5e;
   box-shadow: none;
 }
 @media (max-width: 767px) {
@@ -156,9 +226,9 @@ footer a {
 .jumbotron {
   /*background-color: #e5e5e5;
     border-radius: 0 !important;*/
-  background: #00b1ac;
-  border-radius: 5px !important;
-  color: white !important;
+  background: rgba(191, 191, 191, 0.12);
+  border-radius: 10px !important;
+  color: #5e5e5e !important;
   text-align: center;
   overflow-y: hidden;
   height: 325px;
@@ -287,6 +357,22 @@ footer a {
 #ponente {
   margin: 50px 0px;
 }
+@media (max-width: 767px) {
+  #ponente {
+    margin: 0;
+  }
+}
+#ponente a.btn {
+  float: right;
+  display: block;
+  margin-bottom: 25px;
+  clear: both;
+}
+@media (min-width: 767px) {
+  #ponente a.btn {
+    display: none;
+  }
+}
 .member {
   margin-bottom: 50px;
   overflow: hidden;
@@ -382,6 +468,21 @@ footer a {
 }
 .accordion .accordion-inner div h3 {
   font-size: 1em;
+}
+@media (max-width: 767px) {
+  .accordion .accordion-inner div h3 {
+    text-align: center;
+  }
+}
+.accordion .accordion-inner div img {
+  max-width: 175%;
+}
+@media (max-width: 767px) {
+  .accordion .accordion-inner div img {
+    max-width: 90%;
+    display: block;
+    margin: 0 auto;
+  }
 }
 .accordion .accordion-inner.default {
   display: block;

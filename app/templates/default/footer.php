@@ -17,13 +17,9 @@
 		'//cdn.datatables.net/1.10.6/js/jquery.dataTables.min.js',
 		'//cdn.datatables.net/plug-ins/1.10.6/integration/bootstrap/3/dataTables.bootstrap.js'
 	)) ;
+
 	echo $data['js'];
 ?>
-<script type="text/javascript">
-	$(document).ready(function() {
-    $('#ponentes').dataTable();
-} );
-</script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>

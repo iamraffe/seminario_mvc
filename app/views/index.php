@@ -4,11 +4,11 @@
 					<div class="col-md-7 big-text">
 						<h1><span class="bold block">2º Seminario Internacional</span> de Seguridad del Paciente y Excelencia Clínica</h1>
 						<!-- <img src="img/peps.svg"> -->
-						<a class="btn btn-default" href="<?php echo DIR;?>registro">Inscríbete <span class="glyphicon glyphicon-pencil"></span></a>
+						<a class="btn btn-custom btn-lg margin-top-20" href="<?php echo DIR;?>registro">Inscríbete  <span class="fa fa-pencil-square-o"></span></a>
 					</div>
 					<div class="col-md-5 hidden-xs hidden-sm">
-						<img src="img/peps.svg" style="width: 85%;"> 
-						<!--<img src="img/raimon.png"> -->
+						<!-- <img src="img/peps.svg" style="width: 85%;">  -->
+						<img src="img/raimon.png"> 
 					</div>
 				</div>
 			</div>	

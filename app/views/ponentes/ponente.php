@@ -3,14 +3,14 @@
 		foreach ($data['ponente'] as $row) {
 ?>
 <ul class="breadcrumb">
-	<li><a href="<?php echo DIR;?>">Inicio</a></li>
-	<li><a href="<?php echo DIR;?>ponentes">Ponentes</a></li>
-	<li><?php echo $row->ponenteName ?></li>
+	<li><span class="fa fa-home aqua"></span><a href="<?php echo DIR;?>"> Inicio</a></li>
+	<li><span class="fa fa-users aqua"></span><a href="<?php echo DIR;?>ponentes"> Ponentes</a></li>
+	<li><span class="fa fa-user-md"></span> <?php echo $row->ponenteName ?></li>
 </ul>
 
 <div id="ponente" class="row">
+	<a href="<?php echo DIR;?>ponentes" class="btn btn-seminario-aqua"><span class="fa fa-arrow-left"></span> Atrás</a>
 	<div class="col-md-10 col-md-offset-1">
-
 		<div class="row">
 			<div class="col-sm-6">
 				<div class="member">

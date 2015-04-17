@@ -35,7 +35,7 @@
 		<header role="banner">
 		<div id="logo-placeholder">
 			<div class="container">
-			  <img id="logo-seminario" src="img/logoSeminario.svg" alt="2do Seminario Internacional de Seguridad del Paciente y Excelencia Clínica">
+			  <a href="<?php echo DIR;?>"><img id="logo-seminario" src="img/logoSeminario.svg" alt="2do Seminario Internacional de Seguridad del Paciente y Excelencia Clínica"></a>
 			</div>
 		</div>
 		<nav id="navbar-primary" class="navbar navbar-default" role="navigation">

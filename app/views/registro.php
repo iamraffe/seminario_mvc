@@ -1,6 +1,6 @@
 <ul class="breadcrumb">
-	<li><a href="<?php echo DIR;?>">Inicio</a></li>
-	<li>Registro</li>
+	<li><span class="fa fa-home aqua"></span><a href="<?php echo DIR;?>"> Inicio</a></li>
+	<li><span class="fa fa-pencil-square-o"></span> Registro</li>
 </ul>
 
 <?php echo \core\error::display($error) ?>
