@@ -91,11 +91,6 @@ a{
     }    
   }
 
-  /*!
- * Start Bootstrap - SB Admin Bootstrap Admin Template (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
 
 /* Global Styles */
 body {
@@ -250,18 +245,24 @@ ul.alert-dropdown {
     }
 }
 
-.side-nav>li>ul {
+.side-nav>li>ul, ul#exportar-submenu{
     padding: 0;
 }
 
-.side-nav>li>ul>li>a {
+.side-nav>li>ul>li>a{
     display: block;
     padding: 10px 15px 10px 38px;
     text-decoration: none;
     color: #999;
 }
+    ul#exportar-submenu li a{
+      display: block;
+      padding: 10px 15px 10px 58px;
+      text-decoration: none;
+      color: #999;
+    }
 
-.side-nav>li>ul>li>a:hover {
+.side-nav>li>ul>li>a:hover, ul#exportar-submenu li a:hover {
     color: #eee;
 }
 

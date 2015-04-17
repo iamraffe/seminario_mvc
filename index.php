@@ -78,7 +78,8 @@ Router::any('admin/ponentes/edit/(:num)', '\controllers\admin\ponentes@edit');
 Router::any('admin/ponentes/delete/(:num)', '\controllers\admin\ponentes@delete');
 
 Router::any('admin/asistentes', '\controllers\admin\asistentes@index');
-Router::any('admin/asistentes/export', '\controllers\admin\asistentes@export');
+Router::any('admin/asistentes/exportexcel', '\controllers\admin\asistentes@exportexcel');
+Router::any('admin/asistentes/exportpdf', '\controllers\admin\asistentes@exportpdf');
 Router::any('admin/asistentes/add', '\controllers\admin\asistentes@add');
 Router::any('admin/asistentes/edit/(:num)', '\controllers\admin\asistentes@edit');
 Router::any('admin/asistentes/delete/(:num)', '\controllers\admin\asistentes@delete');

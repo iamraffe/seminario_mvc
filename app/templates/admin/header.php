@@ -1,7 +1,6 @@
 
 <!DOCTYPE html>
 <html lang="<?php echo LANGUAGE_CODE; ?>">
-
 <head>
 
     <meta charset="utf-8">
@@ -52,17 +51,17 @@
             <!-- Top Menu Items -->
             <ul class="nav navbar-right top-nav">
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <?php echo \helpers\session::get('currentusername'); ?><b class="caret"></b></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-user"></span> <?php echo \helpers\session::get('currentusername'); ?><b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li>
-                            <a href="#"><i class="fa fa-fw fa-user"></i> Perfil</a>
+                            <a href="#"><span class="fa fa-fw fa-user"></span> Perfil</a>
                         </li>
                         <li>
-                            <a href="<?php echo DIR;?>admin/users/edit/<?php echo \helpers\session::get('currentid');?>"><i class="fa fa-fw fa-gear"></i> Editar</a>
+                            <a href="<?php echo DIR;?>admin/users/edit/<?php echo \helpers\session::get('currentid');?>"><span class="fa fa-fw fa-gear"></span> Editar</a>
                         </li>
                         <li class="divider"></li>
                         <li>
-                            <a href="<?php echo DIR;?>admin/logout"><i class="fa fa-fw fa-power-off"></i> Cerrar sesión</a>
+                            <a href="<?php echo DIR;?>admin/logout"><span class="fa fa-fw fa-power-off"></span> Cerrar sesión</a>
                         </li>
                     </ul>
                 </li>
@@ -74,32 +73,40 @@
                         <a href="<?php echo DIR;?>admin/ "><span class="fa fa-fw fa-dashboard"></span> Inicio</a>
                     </li>
                     <li <?php helpers\assets::isActive(DIR.'admin/ponentes'); helpers\assets::isActive(DIR.'admin/ponentes/add'); ?>>
-                        <a href="javascript:;" data-toggle="collapse" data-target="#ponentes-submenu"><i class="fa fa-fw fa-table"></i> Ponentes <i class="fa fa-fw fa-caret-down"></i></a>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#ponentes-submenu"><span class="fa fa-fw fa-table"></span> Ponentes <span class="fa fa-fw fa-caret-down"></span></a>
                         <ul id="ponentes-submenu" class="collapse">
                             <li>
-                                <a href="<?php echo DIR;?>admin/ponentes">Ver ponentes</a>
+                                <a href="<?php echo DIR;?>admin/ponentes"><span class="fa fa-fw fa-eye"></span> Ver ponentes</a>
                             </li>
                             <li>
-                                <a href="<?php echo DIR;?>admin/ponentes/add">Nuevo ponente</a>
+                                <a href="<?php echo DIR;?>admin/ponentes/add"><span class="fa fa-fw fa-user-plus"></span> Nuevo ponente</a>
                             </li>
                         </ul>
                     </li>
                     <li <?php helpers\assets::isActive(DIR.'admin/asistentes'); helpers\assets::isActive(DIR.'admin/asistentes/add'); ?>>
-                        <a href="javascript:;" data-toggle="collapse" data-target="#asistentes-submenu"><i class="fa fa-fw fa-table"></i> Asistentes <i class="fa fa-fw fa-caret-down"></i></a>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#asistentes-submenu"><span class="fa fa-fw fa-table"></span> Asistentes <span class="fa fa-fw fa-caret-down"></span></a>
                         <ul id="asistentes-submenu" class="collapse">
                             <li>
-                                <a href="<?php echo DIR;?>admin/asistentes">Ver Asistentes</a>
+                                <a href="<?php echo DIR;?>admin/asistentes"><span class="fa fa-fw fa-eye"></span> Ver Asistentes</a>
                             </li>
                             <li>
-                                <a href="<?php echo DIR;?>admin/asistentes/add">Nuevo Asistentes</a>
+                                <a href="<?php echo DIR;?>admin/asistentes/add"><span class="fa fa-fw fa-user-plus"></span> Nuevo Asistentes</a>
                             </li>
                             <li>
-                                <a href="<?php echo DIR;?>admin/asistentes/export">Descargar BD</a>
+                                <a href="javascript:;" data-toggle="collapse" data-target="#exportar-submenu"><span class="fa fa-fw fa-download"></span> Exportar BD <span class="fa fa-fw fa-caret-down"></span></a>
+                                <ul id="exportar-submenu" class="collapse">
+                                    <li>
+                                        <a href="<?php echo DIR;?>admin/asistentes/exportexcel"><span class="fa fa-fw fa-file-excel-o"></span> Excel</a>
+                                    </li>
+                                    <li>
+                                        <a href="<?php echo DIR;?>admin/asistentes/exportpdf"><span class="fa fa-fw fa-file-pdf-o"></span> PDF</a>
+                                    </li>
+                                </ul>
                             </li>                            
                         </ul>
                     </li>
                     <li>
-                        <a href="#"><i class="fa fa-fw fa-wrench"></i> Opciones</a>
+                        <a href="<?php echo DIR;?>"><span class="fa fa-fw fa-sign-out"></span> Volver a la web</a>
                     </li>                    
                 </ul>
             </div>

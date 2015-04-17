@@ -3,6 +3,7 @@
 use \helpers\url,
 		\helpers\session,
 		\helpers\exportexcel,
+		\helpers\exportpdf,
 		\core\view;
 
 class Asistentes extends \core\controller{
@@ -159,7 +160,7 @@ class Asistentes extends \core\controller{
 
 	}
 
-	public function export(){
+	public function exportexcel(){
 
 		ExportExcel::export($this->_model->getAsistentes());
 
@@ -167,7 +168,17 @@ class Asistentes extends \core\controller{
 
 		Url::redirect('admin/asistentes');
 
-	}				
+	}			
+
+	public function exportpdf(){
+		$header = array('Nombre', 'Apellidos', 'Ciudad', 'Centro', 'Cargo', 'Email', 'Telefono', 'Telefono secundario');
+		\helpers\exportpdf::export($header, $this->_model->getAsistentes());
+
+		Session::set('message', 'La base de datos se ha descargado correctamente');
+
+		Url::redirect('admin/asistentes');
+
+	}			
 }
 
 ?>
