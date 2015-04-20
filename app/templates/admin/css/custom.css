@@ -91,6 +91,17 @@ body {
     margin-top: 50px;
   }
 }
+table#asistentes,
+table#ponentes {
+  width: 100% !important;
+  border-spacing: 0px;
+}
+table.datatable th {
+  white-space: nowrap;
+}
+table.datatable td {
+  white-space: nowrap;
+}
 a.navbar-brand {
   padding: 10px;
   margin-left: 0px;

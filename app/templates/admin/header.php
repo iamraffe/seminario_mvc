@@ -15,10 +15,11 @@
     <?php
         helpers\assets::css(array(          
       '//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css',
-      '//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css',
+     
       '//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css',
       '//fonts.googleapis.com/css?family=Muli',
       '//cdn.datatables.net/plug-ins/1.10.6/integration/bootstrap/3/dataTables.bootstrap.css',
+      '//cdn.datatables.net/responsive/1.0.5/css/dataTables.responsive.css',
       helpers\url::admin_template_path() . 'css/custom.css'     
         ))
     ?>

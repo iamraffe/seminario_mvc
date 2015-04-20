@@ -6,7 +6,7 @@
 <?php echo \helpers\session::pull('message'); ?>
 <p><a href="<?php echo DIR; ?>admin/asistentes/add" class="btn btn-primary">Agregar Asistente</a></p>
 
-<table id="asistentes" class='table table-striped table-bordered'>
+<table id="asistentes" class='table table-striped table-hover dt-responsive'>
 <thead>
 	<tr>
 		<th>Nombre</th>

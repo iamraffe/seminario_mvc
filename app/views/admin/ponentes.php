@@ -6,7 +6,7 @@
 <?php echo \helpers\session::pull('message'); ?>
 <p><a href="<?php echo DIR; ?>admin/ponentes/add" class="btn btn-primary">Agregar Ponente</a></p>
 
-<table id="ponentes" class='table table-striped table-bordered'>
+<table id="ponentes" class='table table-striped table-hover dt-responsive'>
 <thead>
 	<tr>
 		<th>Imágen de Perfil</th>
