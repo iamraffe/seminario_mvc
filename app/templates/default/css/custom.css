@@ -354,8 +354,7 @@ footer a {
   border-color: #00b1ac;
 }
 .thumb a img {
-  height: 200px;
-  min-width: 100%;
+  width: 400px;
 }
 /*  PONENTES DETAIL */
 #ponente {
