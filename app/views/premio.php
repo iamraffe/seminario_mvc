@@ -6,7 +6,7 @@
 		<div id="premio" class="row">
 			<div class="col-md-10 col-md-offset-1">
 				<h2 class="aqua" style="font-size: 1.75em;">I Edición Premio IDCsalud-Quirón a las Mejores Iniciativas en Seguridad del Paciente</h2>
-				<p class="bold">En el marco del Seminario Internacional, se entregarán los citados premios. Conozca a los ganadores.</p>				
+				<p class="bold">En el marco del Seminario Internacional, la consejera de IDCsalud-Quirón, Dra. María Cordón Muro hará entregara los citados premios.</p>				
 				<p class="bold">El plazo de presentación de candidaturas está abierto hasta el 10 de mayo de 2015</p>
 				<p>El Grupo IDCsalud-Quirón ha convocado la primera edición del <span class="bold">Premio a las Mejores Iniciativas en Seguridad del Paciente</span>. Con este certamen, el Grupo pretende fomentar el desarrollo de prácticas seguras para los usuarios y profesionales de la sanidad, reconociendo económicamente los mejores proyectos de 2014 y 2015. El plazo de candidaturas a los premios, cuyas bases se pueden consultar a través de <a href="http://www.idcsalud.es" title="idcsalud">idcsalud.es</a> o <a href="http://www.quiron.es" title="quiron salud">quiron.es</a>, está abierto hasta el 10 de mayo.</p>
 				<img src="img/premios.jpg">
