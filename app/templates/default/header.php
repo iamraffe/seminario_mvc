@@ -15,6 +15,7 @@
   <meta name="author" content="Rafael Ramirez Urbina (www.fundaseth.es)">
   <meta name="designer" content="Rafael Ramirez Urbina (www.fundaseth.es)">
 	<title><?php if($data['title'] != ''){echo $data['title'].' | '.SITETITLE;}else{echo SITETITLE;} ?></title>
+	<link rel="icon" type="image/png" href="img/favicon.png" />
 	<meta name="description" content="">
 
 	<!-- CSS -->
