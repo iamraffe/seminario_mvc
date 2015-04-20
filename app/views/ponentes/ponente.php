@@ -5,7 +5,7 @@
 <ul class="breadcrumb">
 	<li><span class="fa fa-home aqua"></span><a href="<?php echo DIR;?>"> Inicio</a></li>
 	<li><span class="fa fa-users aqua"></span><a href="<?php echo DIR;?>ponentes"> Ponentes</a></li>
-	<li><span class="fa fa-user-md"></span> <?php echo $row->ponenteName ?></li>
+	<li><span class="fa fa-user-md"></span> <?php echo $row->ponenteName.' '.$row->ponenteApellidos ?></li>
 </ul>
 
 <div id="ponente" class="row">
@@ -16,8 +16,8 @@
 				<div class="member">
 					<div class="member-img">
 						<?php
-							echo '<img src="'.$row->ponenteImg.'" alt="'.$row->ponenteName.'">';
-							echo '<h2>'.$row->ponenteName.'</h2>';
+							echo '<img src="'.$row->ponenteImg.'" alt="'.$row->ponenteName.' '.$row->ponenteApellidos.'">';
+							echo '<h2>'.$row->ponenteName.' '.$row->ponenteApellidos.'</h2>';
 						?>
 							<div class="member-role">
 								<?php

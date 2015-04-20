@@ -24,6 +24,10 @@
 			<input class="form-control col-md-4" type="text" name="ponenteName" value="<?php echo $data['row'][0]->ponenteName; ?>">
 		</div>
 		<div class="form-group">
+			<label class="control-label" for="Apellidos del ponente">Apellidos</label>  
+			<input class="form-control col-md-4" type="text" name="ponenteApellidos" value="<?php echo $data['row'][0]->ponenteApellidos; ?>">
+		</div>				
+		<div class="form-group">
 			<label class="control-label" for="Centro del ponente">Cargo</label>  
 			<input class="form-control col-md-4" type="text" name="ponenteCentro" value="<?php echo $data['row'][0]->ponenteCentro; ?>">
 		</div>

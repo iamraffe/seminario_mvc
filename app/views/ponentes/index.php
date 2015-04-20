@@ -21,7 +21,7 @@
 
 					echo '<a class="thumbnail" href="'.DIR.$row->slug.'">
 							<img class="img-responsive" src="'.$row->ponenteImg.'">
-							<h3>'.$row->ponenteName.'</h3>
+							<h3>'.$row->ponenteName.' '.$row->ponenteApellidos.'</h3>
 							<p>'.$row->ponenteCentro.'</p>
 					</a>';
 					echo '</div>';

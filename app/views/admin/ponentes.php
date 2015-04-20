@@ -33,7 +33,7 @@
 		foreach($data['ponentes'] as $row){
 			echo '<tr>';
 			echo '<td><img src="../'.$row->ponenteImg.'" style="max-height: 150px; display: block; margin: 0 auto;"></td>';
-			echo '<td>'.$row->ponenteName.'</td>';
+			echo '<td>'.$row->ponenteName.' '.$row->ponenteApellidos.'</td>';
 			echo '<td>'.$row->ponenteCentro.'</td>';
 			echo '<td>'.$row->ponenteBio.'</td>';
 			echo '<td>

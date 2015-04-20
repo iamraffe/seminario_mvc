@@ -16,6 +16,10 @@
 			<input class="form-control col-md-4" type="text" name="ponenteName" value="<?php if(isset($error)){echo $_POST['ponenteName'];}?>" placeholder="Nombre del ponente">
 		</div>
 		<div class="form-group">
+			<label class="control-label" for="Apellidos del ponente"></label>  
+			<input class="form-control col-md-4" type="text" name="ponenteApellidos" value="<?php if(isset($error)){echo $_POST['ponenteApellidos'];}?>" placeholder="Apellidos del ponente">
+		</div>		
+		<div class="form-group">
 			<label class="control-label" for="Centro del ponente"></label>  
 			<input class="form-control col-md-4" type="text" name="ponenteCentro" value="<?php if(isset($error)){echo $_POST['ponenteCentro'];}?>" placeholder="Centro del ponente">
 		</div>

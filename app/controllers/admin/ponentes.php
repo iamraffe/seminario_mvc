@@ -43,20 +43,23 @@ class Ponentes extends \core\controller{
 		$data['title'] = 'Agregar Ponente';
 		if(isset($_POST['submit'])){
 			$ponenteName = $_POST['ponenteName'];
+
+			$ponenteApellidos = $_POST['ponenteApellidos'];
 			$ponenteCentro = $_POST['ponenteCentro'];
 			$ponenteBio = $_POST['ponenteBio'];
 
 
-			if($ponenteName == '' || $ponenteCentro == '' || $ponenteBio == ''){
+			if($ponenteName == '' || $ponenteApellidos == '' || $ponenteCentro == '' || $ponenteBio == ''){
 				$error[] = 'Todos los campos son obligatorios';
 			}
 
 			if(!$error){
 				$slug = Url::generateSafeSlug($ponenteName);
+				$slug .= Url::generateSafeSlug($ponenteApellidos);
 				$file = 'img/'.$_FILES['ponenteImg']['name'];
 				move_uploaded_file($_FILES['ponenteImg']['tmp_name'], $file);
 
-				$data = array('ponenteName' => $ponenteName, 'ponenteCentro' => $ponenteCentro, 'ponenteBio' => $ponenteBio, 'slug' => $slug, 'ponenteImg' => $file);
+				$data = array('ponenteName' => $ponenteName, 'ponenteApellidos' => $ponenteApellidos, 'ponenteCentro' => $ponenteCentro, 'ponenteBio' => $ponenteBio, 'slug' => $slug, 'ponenteImg' => $file);
 
 				$this->_model->insertPonente($data);
 
@@ -76,17 +79,19 @@ class Ponentes extends \core\controller{
 
 		if(isset($_POST['submit'])){
 			$ponenteName = $_POST['ponenteName'];
+			$ponenteApellidos = $_POST['ponenteApellidos'];
 			$ponenteCentro = $_POST['ponenteCentro'];
 			$ponenteBio = $_POST['ponenteBio'];
 
-			if($ponenteName == '' || $ponenteCentro == '' || $ponenteBio == ''){
+			if($ponenteName == '' || $ponenteApellidos == '' || $ponenteCentro == '' || $ponenteBio == ''){
 				$error[] = 'Todos los campos son obligatorios';
 			}
 
 			if(!$error){
 				$slug = Url::generateSafeSlug($ponenteName);
+				$slug .= Url::generateSafeSlug($ponenteApellidos);
 
-				$data = array('ponenteName' => $ponenteName, 'ponenteCentro' => $ponenteCentro, 'ponenteBio' => $ponenteBio, 'slug' => $slug);
+				$data = array('ponenteName' => $ponenteName, 'ponenteApellidos' => $ponenteApellidos, 'ponenteCentro' => $ponenteCentro, 'ponenteBio' => $ponenteBio, 'slug' => $slug);
 
 				if($_FILES['ponenteImg']['size'] > 0){
 					$file = 'img/'.$_FILES['ponenteImg']['name'];
