@@ -14,6 +14,7 @@ class Registro extends \core\controller{
 
 	public function index(){
 		$data['title'] = 'Regístrate';
+		$data['isRegistro'] = 'class="active"';
 		if(isset($_POST['submit'])){
 			$asistenteName = $_POST['asistenteName'];
 			$asistentePrimerApellido = $_POST['asistentePrimerApellido'];
