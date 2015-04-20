@@ -59,6 +59,7 @@
 		        <li <?php echo $data['isPonentes'] ?>><a href="<?php echo DIR;?>ponentes">Ponentes</a></li>
 		        <li <?php echo $data['isComo-llegar'] ?>><a href="<?php echo DIR;?>como-llegar">Cómo Llegar</a></li>
 		        <li <?php echo $data['isRegistro'] ?>><a href="<?php echo DIR;?>registro">Inscríbete</a></li>
+		        <li <?php echo $data['isPremio'] ?>><a href="<?php echo DIR;?>premio">Premio</a></li>
 		      </ul>
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->

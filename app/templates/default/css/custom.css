@@ -17,6 +17,9 @@ html * {
 .aqua {
   color: #00b1ac !important;
 }
+.red {
+  color: #f05169 !important;
+}
 .container-fluid {
   padding: 0 !important;
 }
@@ -486,6 +489,16 @@ footer a {
 }
 .accordion .accordion-inner.default {
   display: block;
+}
+/* PREMIO */
+.row#premio {
+  padding-bottom: 50px;
+}
+.row#premio img {
+  max-width: 100%;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
 }
 /* CONDICIONES */
 .condiciones {

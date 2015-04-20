@@ -96,6 +96,8 @@ Router::any('(:any)', '\controllers\ponentes\ponentes@ponente');
 Router::any('como-llegar', '\controllers\comollegar@index');
 //REGISTRO
 Router::any('registro', '\controllers\registro@index');
+//PREMIO
+Router::any('premio', '\controllers\premio@index');
 //CONDICIONES DE USO
 Router::any('condiciones', '\controllers\condiciones@index');
 
