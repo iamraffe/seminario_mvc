@@ -14,7 +14,7 @@
 				<p>El <span class="bold">jurado de expertos</span> que seleccionará los proyectos ganadores valorará especialmente la calidad de la metodología del proyecto, el impacto en la organización de la iniciativa y el valor de los resultados obtenidos durante la pre y post intervención de los pacientes, entre otros aspectos. Los trabajos ganadores serán anunciados durante el <span class="bold">II Seminario Internacional de Seguridad del Paciente y Excelencia Clínica</span>, que tendrá lugar el próximo 28 de mayo de 2015 en el Aula Magna de la Fundación Jiménez Díaz en Madrid.</p>
 				<p>Con estos premios, el Grupo IDCsalud-Quirón busca contribuir a la concepción, aplicación y difusión de nuevas iniciativas que refuercen la seguridad del paciente en todos los sistemas sanitarios. Una iniciativa que se enmarca dentro de su Plan Estratégico iniciado en 2012, que marca como línea fundamental la búsqueda de la excelencia asistencial en todos sus centros.
 Las bases se encuentran en el archivo adjunto.</p>
-				<p><span class="fa fa-file-pdf-o red"></span><a href="http://www.idcsalud.es/es/i-edicion-premio-idcsalud-quiron-mejores-iniciativas-seguri.ficheros/114549-I%20Edici%C3%B3n%20Premio%20IDCsalud-Quir%C3%B3n.pdf"> Bases del concurso (1.7 MB)</a></p>
+				<p><span class="fa fa-file-pdf-o red"></span> <a href="http://www.idcsalud.es/es/i-edicion-premio-idcsalud-quiron-mejores-iniciativas-seguri.ficheros/114549-I%20Edici%C3%B3n%20Premio%20IDCsalud-Quir%C3%B3n.pdf">Bases del concurso (1.7 MB)</a></p>
 			</div>			
 		</div>
 
