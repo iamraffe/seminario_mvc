@@ -477,7 +477,8 @@ footer a {
   }
 }
 .accordion .accordion-inner div img {
-  max-width: 175%;
+  max-width: 100%;
+  margin: 25px;
 }
 @media (max-width: 767px) {
   .accordion .accordion-inner div img {

@@ -1,10 +1,12 @@
 <ul class="breadcrumb">
 	<li><span class="fa fa-home aqua"></span><a href="<?php echo DIR;?>"> Inicio</a></li>
-	<li><span class="fa fa-pencil-square-o"></span> Registro</li>
+	<li><span class="fa fa-pencil-square-o"></span> Inscripción</li>
 </ul>
 
-<?php echo \core\error::display($error) ?>
-<?php echo \helpers\session::pull('message'); ?>
+<?php echo \core\error::display($error) ?>	
+<?php echo \core\success::display(\helpers\session::pull('message')) ?>
+
+
 		<div class="row">
 			<form class="form-horizontal check-in" action="" method="post" role="form">
 				<fieldset>
@@ -29,7 +31,7 @@
 					<div class="form-group">
 					  <label class="col-md-4 control-label" for="asistenteSegundoApellido"></label>  
 					  <div class="col-md-4">
-					  <input id="asistenteSegundoApellido" name="asistenteSegundoApellido" type="text" placeholder="Segundo Apellido" class="form-control input-md" required="">
+					  <input id="asistenteSegundoApellido" name="asistenteSegundoApellido" type="text" placeholder="Segundo Apellido" class="form-control input-md">
 					    
 					  </div>
 					</div>
@@ -85,7 +87,7 @@
 					<div class="form-group">
 					  <label class="col-md-4 control-label" for="submit"></label>
 					  <div class="col-md-4">
-					    <button id="submit" name="submit" class="btn btn-default">Registrarse</button>
+					    <button id="submit" name="submit" class="btn btn-default">Inscribirse</button>
 					  </div>
 					</div>
 				</fieldset>

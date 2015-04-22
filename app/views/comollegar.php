@@ -22,7 +22,7 @@
 					<h3>28040 – Madrid</h3>
 				</div>
 				<div class="col-md-5 col-sm-3">
-					<img src="img/logo-fundacion-jimenez-diaz.png" alt="Fundación Jiménez Díaz">
+					<img src="img/logo-fundacion-jimenez-diaz.jpeg" alt="Fundación Jiménez Díaz">
 				</div>
 			</div>					
 		</div>

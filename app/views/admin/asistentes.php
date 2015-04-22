@@ -3,7 +3,7 @@
 	<li><span class="fa fa-fw fa-users"></span> Asistentes</li>
 </ul>
 <h1>Asistentes</h1>
-<?php echo \helpers\session::pull('message'); ?>
+<?php echo \core\success::display(\helpers\session::pull('message')) ?>
 <p><a href="<?php echo DIR; ?>admin/asistentes/add" class="btn btn-primary">Agregar Asistente</a></p>
 
 <table id="asistentes" class='table table-striped table-hover dt-responsive'>

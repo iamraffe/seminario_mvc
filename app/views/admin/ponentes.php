@@ -3,7 +3,7 @@
 	<li><span class="fa fa-fw fa-users"></span> Ponentes</li>
 </ul>
 <h1>Ponentes</h1>
-<?php echo \helpers\session::pull('message'); ?>
+<?php echo \core\success::display(\helpers\session::pull('message')) ?>
 <p><a href="<?php echo DIR; ?>admin/ponentes/add" class="btn btn-primary">Agregar Ponente</a></p>
 
 <table id="ponentes" class='table table-striped table-hover dt-responsive'>

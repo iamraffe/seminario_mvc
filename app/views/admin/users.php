@@ -4,7 +4,7 @@
 </ul>
 
 <h1>Administadores</h1>
-<?php echo \helpers\session::pull('message'); ?>
+<?php echo \core\success::display(\helpers\session::pull('message')) ?>
 <p><a href="<?php echo DIR; ?>admin/users/add" class="btn btn-primary">Agregar admin</a></p>
 
 <table class='table table-striped table-hover table-bordered responsive'>

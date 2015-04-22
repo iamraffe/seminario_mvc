@@ -57,9 +57,6 @@ class Asistentes extends \core\controller{
 			if($asistentePrimerApellido == ''){
 				$error[] = 'El campo "Primer apellido" es obligatorios';
 			}
-			if($asistenteSegundoApellido == ''){
-				$error[] = 'El campo "Segundo apellido" es obligatorios';
-			}
 			if($asistenteCentro == ''){
 				$error[] = 'El campo "Centro" es obligatorios';
 			}
@@ -112,9 +109,6 @@ class Asistentes extends \core\controller{
 			}
 			if($asistentePrimerApellido == ''){
 				$error[] = 'El campo "Primer apellido" es obligatorios';
-			}
-			if($asistenteSegundoApellido == ''){
-				$error[] = 'El campo "Segundo apellido" es obligatorios';
 			}
 			if($asistenteCentro == ''){
 				$error[] = 'El campo "Centro" es obligatorios';

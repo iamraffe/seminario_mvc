@@ -10,7 +10,7 @@
 
 <h1>Editar Ponente</h1>
 
-<h2><?php echo $data['row'][0]->ponenteName; ?></h2>
+<h2><?php echo $data['row'][0]->ponenteName.' '.$data['row'][0]->ponenteApellidos; ?></h2>
 
 <img src="../../../<?php echo $data['row'][0]->ponenteImg; ?>" style="max-height: 275px; margin: 0 auto; display: block;">
 
@@ -47,4 +47,4 @@
 </form>
 
 <script src="//tinymce.cachefly.net/4.1/tinymce.min.js"></script>
-<script>tinymce.init({selector:'textarea', plugins: "paste",paste_as_text: true});</script>
+<script>tinymce.init({selector:'textarea', plugins: "paste",paste_as_text: true, font_size_style_values: "14px", content_css : "<?php echo DIR ?>app/templates/admin/css/style.css"});</script>

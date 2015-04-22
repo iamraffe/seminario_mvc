@@ -29,7 +29,7 @@
 					<div class="form-group">
 					  <label class="col-md-4 control-label" for="asistenteSegundoApellido"></label>  
 					  <div class="col-md-4">
-					  <input id="asistenteSegundoApellido" name="asistenteSegundoApellido" type="text" placeholder="Segundo Apellido" class="form-control input-md" required="">
+					  <input id="asistenteSegundoApellido" name="asistenteSegundoApellido" type="text" placeholder="Segundo Apellido" class="form-control input-md">
 					    
 					  </div>
 					</div>

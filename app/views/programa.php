@@ -108,10 +108,10 @@
 				<ul class="lista-ponentes">
 					<li>
 						<p class="ponente-name">Dr. Donald M. Berwick</p>
-						<p>Antiguo Director de los Centers for Medicare and Medicaid Services (CMS), fue también fundador, Presidente y CEO del IHI (Institute for Healthcare Improvement). Estados Unidos.</p>
+						<p>Fue Director de los Centers for Medicare and Medicaid Services (CMS), fue también fundador, Presidente y CEO del IHI (Institute for Healthcare Improvement). Estados Unidos.</p>
 					</li>
 				</ul>
-				<p>Presenta el <span class="bold">Dr. Raúl Muñiz García</span>Director de Mejores Prácticas, IDCsalud-Quirón.</p>
+				<p>Presenta el <span class="bold">Dr. Raúl Muñiz García</span>. Director de Mejores Prácticas, IDCsalud-Quirón.</p>
 			</div>	
 		</div>
 
@@ -120,7 +120,7 @@
 				<p>13:00 - 14:00h</p>
 			</div>
 			<div class="col-md-9 green-background program-event">
-				<p>Mesa redonda. Sesión de debate sobre las ideas expuestas por los conferenciantes con seis médicos de gran prestigio en España</p>
+				<p>Mesa redonda. Sesión de debate sobre las ideas expuestas por los conferenciantes, con siete profesionales de gran prestigio en España</p>
 			</div>	
 		</div>
 		<div class="row light-gray-background">
@@ -152,11 +152,11 @@
 						<p>Directora Corporativa de Desarrollo Asistencial, IDCsalud-Quirón.</p>
 					</li>			
 					<li>
-						<p class="ponente-name">D. Adolfo Fernández Valmayor</p>
+						<p class="ponente-name">D. Adolfo Fernández-Valmayor</p>
 						<p>Director General de Organización, Procesos y TIC &amp; Digital, IDCsalud-Quirón.</p>
 					</li>										
 				</ul>
-				<p>Moderador: <span class="bold">Dr. Raimon Belenes Juárez</span>, Director Corporativo de Innovación, Investigación y Calidad, IDCsalud-Quirón.</p>
+				<p>Moderador: <span class="bold">Dr. Raimon Belenes Juárez</span>. Director Corporativo de Innovación, Investigación y Calidad, IDCsalud-Quirón.</p>
 			</div>	
 		</div>
 
@@ -170,16 +170,16 @@
 		</div>
 		<div class="row light-gray-background">
 			<div class="col-md-9 col-md-offset-3">
-				<p class="bold programa-subtitle">Entrega el premio la Dra. María Cordón Muro, Consejera de IDCsalud-Quirón.</p>
+				<p class="bold programa-subtitle">Entrega el premio la Dra. María Cordón Muro. Consejera de IDCsalud-Quirón.</p>
 
 			</div>	
 		</div>	
 		<div class="row margin-top-10">
 			<div class="col-md-3 program-time center green-background">
-				<p>14:30 - 16:30h</p>
+				<p>14:30 - 15:30h</p>
 			</div>
 			<div class="col-md-9 green-background program-event">
-				<p>Pausa almuerzo</p>
+				<p>Refrigerio</p>
 			</div>	
 		</div>
 

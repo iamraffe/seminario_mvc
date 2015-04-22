@@ -27,28 +27,25 @@ class Registro extends \core\controller{
 			$asistenteTelefonoSecundario = $_POST['asistenteTelefonoSecundario'];
 
 			if($asistenteName == ''){
-				$error[] = 'El campo "Nombre" es obligatorios';
+				$error[] = 'El campo "Nombre" es obligatorio';
 			}
 			if($asistentePrimerApellido == ''){
-				$error[] = 'El campo "Primer apellido" es obligatorios';
-			}
-			if($asistenteSegundoApellido == ''){
-				$error[] = 'El campo "Segundo apellido" es obligatorios';
+				$error[] = 'El campo "Primer apellido" es obligatorio';
 			}
 			if($asistenteCentro == ''){
-				$error[] = 'El campo "Centro" es obligatorios';
+				$error[] = 'El campo "Centro" es obligatorio';
 			}
 			if($asistenteCiudad == ''){
-				$error[] = 'El campo "Ciudad" es obligatorios';
+				$error[] = 'El campo "Ciudad" es obligatorio';
 			}
 			if($asistenteCargo == ''){
-				$error[] = 'El campo "Cargo" es obligatorios';
+				$error[] = 'El campo "Cargo" es obligatorio';
 			}
 			if($asistenteEmail == ''){
-				$error[] = 'El campo "Correo Electrónico" es obligatorios';
+				$error[] = 'El campo "Correo Electrónico" es obligatorio';
 			}
 			if($asistenteTelefono == ''){
-				$error[] = 'El campo "Teléfono" es obligatorios';
+				$error[] = 'El campo "Teléfono" es obligatorio';
 			}
 
 			if(!$error){
@@ -71,8 +68,23 @@ class Registro extends \core\controller{
 
 				$mail = new \helpers\phpmailer\mail();
 				$mail -> CharSet = 'UTF-8';
-				$mail->addAddress('raffe90@gmail.com', 'Rafa Ramírez');
+				$mail->IsHTML(true);
+				$mail->SetFrom('noreply@seminarioexcelencia.com', '2do Seminario Internacional de Seguridad del Paciente y Excelencia Clínica');
+				$mail->addAddress('seminario.excelencia@idcsalud.es', '2do Seminario Internacional de Seguridad del Paciente y Excelencia Clínica');
 				$mail->subject('Nuevo Registro en la Base de Datos [Seminario]');
+				$mail->body($body);
+				$mail->send();
+
+				$body = '<p>Su inscripción al 2<sup>o</sup> Seminario Internacionalde Seguridad del Paciente y Excelencia Clínica se ha realizado corectamente.</p>';
+				$body .= '<p>[THIS IS AN AUTOMATED MESSAGE - PLEASE DO NOT REPLY DIRECTLY TO THIS EMAIL]</p>';
+
+				$mail = new \helpers\phpmailer\mail();
+				$mail -> CharSet = 'UTF-8';
+				$mail->IsHTML(true);
+				$mail->SetFrom('noreply@seminarioexcelencia.com', '2do Seminario Internacional de Seguridad del Paciente y Excelencia Clínica');
+				$fullname = $asistenteName.' '.$asistentePrimerApellido;
+				$mail->addAddress($asistenteEmail, $fullname);
+				$mail->subject('Inscripción 2do Seminario Internacional de Seguridad del Paciente y Excelencia Clínica');
 				$mail->body($body);
 				$mail->send();
 
@@ -80,7 +92,7 @@ class Registro extends \core\controller{
 
 				Session::set('message', 'Usted se ha registrado correctamente.');
 
-				Url::redirect('registro');
+				Url::redirect('registro', $error);
 			}
 		}
 		View::rendertemplate('header', $data);

@@ -10,7 +10,7 @@
 
 <h1>Editar Ponente</h1>
 
-<h2><?php echo $data['row'][0]->asistenteName; ?></h2>
+<h2><?php echo $data['row'][0]->asistenteName.' '.$data['row'][0]->asistentePrimerApellido; ?></h2>
 
 
 			<form class="form-horizontal check-in" action="" method="post" role="form">
@@ -36,7 +36,7 @@
 					<div class="form-group">
 					  <label class="col-md-4 control-label" for="asistenteSegundoApellido">Segundo Apellido</label>  
 					  <div class="col-md-4">
-					  <input id="asistenteSegundoApellido" name="asistenteSegundoApellido" type="text" value="<?php echo $data['row'][0]->asistenteSegundoApellido; ?>" class="form-control input-md" required="">
+					  <input id="asistenteSegundoApellido" name="asistenteSegundoApellido" type="text" value="<?php echo $data['row'][0]->asistenteSegundoApellido; ?>" class="form-control input-md">
 					    
 					  </div>
 					</div>

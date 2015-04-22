@@ -22,9 +22,10 @@ class Ponentes extends \core\controller{
 	}
 
 	public function ponente($slug){
-		$data['title'] = $slug;
+		
 		$data['isPonentes'] = 'class="active"';
 		$data['ponente'] = $this->_model->getPonente($slug);
+		$data['title'] = $data['ponente'][0]->ponenteName.' '.$data['ponente'][0]->ponenteApellidos;
 
 		View::rendertemplate('header', $data);
 		View::render('ponentes/ponente', $data);

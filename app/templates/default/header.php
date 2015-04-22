@@ -14,7 +14,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Rafael Ramirez Urbina (www.fundaseth.es)">
   <meta name="designer" content="Rafael Ramirez Urbina (www.fundaseth.es)">
-	<title><?php if($data['title'] != ''){echo $data['title'].' | '.SITETITLE;}else{echo SITETITLE;} ?></title>
+	<title><?php if($data['title'] != ''){echo $data['title'].' | '.SITETITLE;}else{echo SITETITLE.' | El trato hospitalario del futuro';} ?></title>
 	<link rel="icon" type="image/png" href="img/favicon.png" />
 	<meta name="description" content="">
 
@@ -59,7 +59,7 @@
 		        <li <?php echo $data['isPrograma'] ?>><a href="<?php echo DIR;?>programa">Programa</a></li>
 		        <li <?php echo $data['isPonentes'] ?>><a href="<?php echo DIR;?>ponentes">Ponentes</a></li>
 		        <li <?php echo $data['isComo-llegar'] ?>><a href="<?php echo DIR;?>como-llegar">Cómo Llegar</a></li>
-		        <li <?php echo $data['isRegistro'] ?>><a href="<?php echo DIR;?>registro">Inscríbete</a></li>
+		        <li <?php echo $data['isRegistro'] ?>><a href="<?php echo DIR;?>registro">Inscripción</a></li>
 		        <li <?php echo $data['isPremio'] ?>><a href="<?php echo DIR;?>premio">Premios</a></li>
 		      </ul>
 		    </div><!-- /.navbar-collapse -->
