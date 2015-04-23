@@ -80,7 +80,7 @@
 						<p>Catedrático de Microbiología en la Universidad Católica de Leuven y Jefe del Centro de Diagnóstico Molecular, del laboratorio de bacteriología experimental del Hospital Universitario de Leuven. Bélgica.</p>
 					</li>
 				</ul>
-				<p>Presenta la <span class="bold">Dra. Lucía Alonso</span>. Directora Territorial Madrid, IDCsalud-Quirón.</p>
+				<p>Presenta la <span class="bold">Dra. Lucía Alonso Pérez</span>. Directora Territorial Madrid, IDCsalud-Quirón.</p>
 			</div>	
 		</div>
 
@@ -128,6 +128,14 @@
 				<p class="programa-subtitle">Ponentes</p>
 				<ul class="lista-ponentes">
 					<li>
+						<p class="ponente-name">D. Adolfo Fernández-Valmayor</p>
+						<p>Director General de Organización, Procesos y TIC &amp; Digital, IDCsalud-Quirón.</p>
+					</li>			
+					<li>
+						<p class="ponente-name">Dr. Eduardo Fraile Moreno</p>
+						<p>Director Técnico de la Unidad Central de Radiodiagnóstico de la Comunidad de Madrid.</p>
+					</li>							
+					<li>
 						<p class="ponente-name">Dr. Jesús García Foncillas</p>
 						<p>Director del Dpto. de Oncología del Hospital Universitario Fundación Jiménez Díaz, Madrid.</p>
 					</li>
@@ -136,25 +144,17 @@
 						<p>Jefe del Servicio Médico Materno Fetal del Hospital Clínico de Barcelona y Hospital Sant Joan de Déu. Barcelona.</p>
 					</li>
 					<li>
-						<p class="ponente-name">Dr. Eduardo Fraile Moreno</p>
-						<p>Director Técnico de la Unidad Central de Radiodiagnóstico de la Comunidad de Madrid.</p>
-					</li>
-					<li>
-						<p class="ponente-name">Dr. Gonzalo Varela Simó</p>
-						<p>Jefe del Servicio de Cirugía Torácica del Hospital Universitario de Salamanca.</p>
-					</li>
+						<p class="ponente-name">Dra. Leticia Moral Iglesias</p>
+						<p>Directora Corporativa de Desarrollo Asistencial, IDCsalud-Quirón.</p>
+					</li>		
 					<li>
 						<p class="ponente-name">Dr. José Luis de Sancho</p>
 						<p>Especialista en gestión sanitaria. Barcelona.</p>
-					</li>
+					</li>						
 					<li>
-						<p class="ponente-name">Dra. Leticia Moral Iglesias</p>
-						<p>Directora Corporativa de Desarrollo Asistencial, IDCsalud-Quirón.</p>
+						<p class="ponente-name">Dr. Gonzalo Varela Simó</p>
+						<p>Jefe del Servicio de Cirugía Torácica del Hospital Universitario de Salamanca.</p>
 					</li>			
-					<li>
-						<p class="ponente-name">D. Adolfo Fernández-Valmayor</p>
-						<p>Director General de Organización, Procesos y TIC &amp; Digital, IDCsalud-Quirón.</p>
-					</li>										
 				</ul>
 				<p>Moderador: <span class="bold">Dr. Raimon Belenes Juárez</span>. Director Corporativo de Innovación, Investigación y Calidad, IDCsalud-Quirón.</p>
 			</div>	
