@@ -17,7 +17,7 @@
 		<div class="accordion-inner default">
 			<div class="row">
 				<div class="col-md-5 col-sm-6 col-md-offset-1 col-sm-offset-1">
-					<h3 class="bold">Fundación Jiménez Díaz. Aula Magna.</h3>
+					<h3 class="bold">Hospital Universitario Fundación Jiménez Díaz. Aula Magna.</h3>
 					<h3>Avda. Reyes Católicos, 2</h3>
 					<h3>28040 – Madrid</h3>
 				</div>
