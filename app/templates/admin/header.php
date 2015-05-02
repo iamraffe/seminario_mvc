@@ -73,6 +73,9 @@
                     <li <?php helpers\assets::isActive(DIR.'admin'); ?>>
                         <a href="<?php echo DIR;?>admin/ "><span class="fa fa-fw fa-dashboard"></span> Inicio</a>
                     </li>
+                    <li <?php helpers\assets::isActive(DIR.'admin'); ?>>
+                        <a href="<?php echo DIR;?>admin/invitar"><span class="fa fa-fw fa-user-plus"></span> Invitados</a>
+                    </li>                    
                     <li <?php helpers\assets::isActive(DIR.'admin/ponentes'); helpers\assets::isActive(DIR.'admin/ponentes/add'); ?>>
                         <a href="javascript:;" data-toggle="collapse" data-target="#ponentes-submenu"><span class="fa fa-fw fa-table"></span> Ponentes <span class="fa fa-fw fa-caret-down"></span></a>
                         <ul id="ponentes-submenu" class="collapse">

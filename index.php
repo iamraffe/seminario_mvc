@@ -84,6 +84,11 @@ Router::any('admin/asistentes/add', '\controllers\admin\asistentes@add');
 Router::any('admin/asistentes/edit/(:num)', '\controllers\admin\asistentes@edit');
 Router::any('admin/asistentes/delete/(:num)', '\controllers\admin\asistentes@delete');
 
+Router::any('admin/invitar', '\controllers\admin\invitar@index');
+Router::any('admin/invitar/add', '\controllers\admin\invitar@add');
+Router::any('admin/invitar/invitar/(:num)', '\controllers\admin\invitar@invitar');
+Router::any('admin/invitar/mass/(:num)', '\controllers\admin\invitar@massinvites');
+
 //HOME
 Router::any('', '\controllers\seminario@index');
 //PROGRAMA

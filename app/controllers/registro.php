@@ -75,8 +75,8 @@ class Registro extends \core\controller{
 				$mail->body($body);
 				$mail->send();
 
-				$body = '<p>Su inscripción al 2<sup>o</sup> Seminario Internacionalde Seguridad del Paciente y Excelencia Clínica se ha realizado corectamente.</p>';
-				$body .= '<p>[THIS IS AN AUTOMATED MESSAGE - PLEASE DO NOT REPLY DIRECTLY TO THIS EMAIL]</p>';
+				$body = '<p>Su inscripción al 2<sup>o</sup> Seminario Internacionalde Seguridad del Paciente y Excelencia Clínica se ha realizado correctamente.</p>';
+				$body .= '<p>[Este es un mensaje automático - Por favor, no responda directamente a este correo]</p>';
 
 				$mail = new \helpers\phpmailer\mail();
 				$mail -> CharSet = 'UTF-8';
