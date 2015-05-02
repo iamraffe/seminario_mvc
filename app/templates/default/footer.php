@@ -4,8 +4,7 @@
 	<footer>
 		<div class="container">
 			<div class="row">
-				<p class="bold">© 2<sup>o</sup> Seminario Internacional de Seguridad del Paciente y Excelencia Clínica</p>
-				<a href="<?php echo DIR;?>condiciones">Condiciones de uso</a>	
+				<?php echo \core\language::show('footer', LANGUAGE_INDEX, \helpers\session::get('language')) ?>
 			</div>
 		</div>
 	</footer>

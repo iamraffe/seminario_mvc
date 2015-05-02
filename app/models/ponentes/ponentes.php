@@ -2,12 +2,12 @@
 
 class Ponentes extends \core\model{
 
-	public function getPonentes(){
-		return $this->_db->select("SELECT * FROM ".PREFIX."ponentes ORDER BY ponenteApellidos ASC");
+	public function getPonentes($ponenteLang){
+		return $this->_db->select("SELECT * FROM ".PREFIX."ponentes WHERE ponenteLang = :ponenteLang ORDER BY ponenteApellidos ASC", array(':ponenteLang' => $ponenteLang));
 	}
-	public function getPonente($slug){
-		return $this->_db->select("SELECT * FROM ".PREFIX."ponentes WHERE slug = :slug", array(':slug' => $slug));
-	}	
-} 
+	public function getPonente($slug, $ponenteLang){
+		return $this->_db->select("SELECT * FROM ".PREFIX."ponentes WHERE slug = :slug AND ponenteLang = :ponenteLang", array(':slug' => $slug, ':ponenteLang' => $ponenteLang));
+	}
+}
 
 ?>

@@ -1,5 +1,7 @@
 <?php namespace core;
 
+use helpers\Session;
+
 /*
  * Language - simple language handler
  *
@@ -14,6 +16,16 @@ class Language {
 	 * @var array
 	 */
 	private $_array;
+
+	/**
+	 * Variable holds current language
+	 * @var string
+	 */
+	private static $_language;
+
+	public function __construct($language){
+		$this->_language = $language;
+	}
 
 	/**
 	 * Load language function
@@ -82,12 +94,32 @@ class Language {
 
 		}
 
-		// If 
+		// If
 		if(!empty($_array[$value])){
 			return $_array[$value];
 		} else {
 			return $value;
 		}
+	}
+
+	public function set($language, $filename = 'seminario_basic') {
+
+		// lang file
+		$file = "app/language/$language/$filename.php";
+
+		// check if readable
+		if(!is_readable($file)){
+
+			// display error
+			echo \core\error::display("Could not load language file '$language/$filename.php'");
+
+		} else {
+
+			Session::set('language', $language);
+			$this->_language = $language;
+
+		}
+
 	}
 
 }

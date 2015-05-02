@@ -106,6 +106,8 @@ Router::any('premio', '\controllers\premio@index');
 //CONDICIONES DE USO
 Router::any('condiciones', '\controllers\condiciones@index');
 
+//LANG HANDLER
+Router::any('language', '\controllers\seminario@language');
 
 //if no route found
 Router::error('\core\error@index');

@@ -20,4 +20,6 @@ return array(
 	'open_subpage' => 'Open subpage',
 	'back_home' => 'Home',
 
+	'choose_language' => 'Español',
+
 );

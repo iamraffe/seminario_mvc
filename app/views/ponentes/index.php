@@ -1,6 +1,6 @@
 <ul class="breadcrumb">
-	<li><span class="fa fa-home aqua"></span><a href="<?php echo DIR;?>"> Inicio</a></li>
-	<li><span class="fa fa-users"></span> Ponentes</li>
+	<li><a href="<?php echo DIR;?>"><span class="fa fa-home aqua"></span></a></li>
+	<li><span class="fa fa-users"></span> <?php echo \core\language::show('ponentes', LANGUAGE_INDEX, \helpers\session::get('language')) ?></li>
 </ul>
 <div class="row">
 	<div class="col-md-10 col-md-offset-1">

@@ -13,7 +13,7 @@ class Ponentes extends \core\controller{
 	public function index(){
 		$data['title'] = 'Ponentes';
 		$data['isPonentes'] = 'class="active"';
-		$data['ponentes'] = $this->_model->getPonentes();
+		$data['ponentes'] = $this->_model->getPonentes(\helpers\session::get('language'));
 
 		View::rendertemplate('header', $data);
 		View::render('ponentes/index', $data);
@@ -24,7 +24,7 @@ class Ponentes extends \core\controller{
 	public function ponente($slug){
 		
 		$data['isPonentes'] = 'class="active"';
-		$data['ponente'] = $this->_model->getPonente($slug);
+		$data['ponente'] = $this->_model->getPonente($slug, \helpers\session::get('language'));
 		$data['title'] = $data['ponente'][0]->ponenteName.' '.$data['ponente'][0]->ponenteApellidos;
 
 		View::rendertemplate('header', $data);
