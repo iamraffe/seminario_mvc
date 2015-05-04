@@ -2,19 +2,19 @@
 	<li><span class="fa fa-home aqua"></span><a href="<?php echo DIR;?>"> Inicio</a></li>
 	<li><span class="fa fa-pencil-square-o"></span> Inscripción</li>
 </ul>
-
+<h1 class="invisible"><?php echo $data['title']; ?></h1>
 <?php echo \core\error::display($error) ?>	
 <?php echo \core\success::display(\helpers\session::pull('message')) ?>
 
 
 		<div class="row">
-			<form class="form-horizontal check-in" action="" method="post" role="form">
+			<form class="form-horizontal check-in" method="post" role="form">
 				<fieldset>
 					<!-- Form Name -->
 					<legend style="display: none;"></legend>
 
 					<div class="form-group">
-					  <label class="col-md-4 control-label" for="nombre"></label>  
+					  <label class="col-md-4 control-label" for="asistenteName"></label>  
 					  <div class="col-md-4">
 					  <input id="asistenteName" name="asistenteName" type="text" placeholder="Nombre" class="form-control input-md" required="">
 					  </div>

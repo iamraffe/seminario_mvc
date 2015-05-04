@@ -2,13 +2,14 @@
 	<li><span class="fa fa-home aqua"></span><a href="<?php echo DIR;?>"> Inicio</a></li>
 	<li><span class="fa fa-map-marker"></span> Cómo llegar</li>
 </ul>
+<h1 class="invisible"><?php echo $data['title']; ?></h1>
 <div class="row">
 	<div class="col-md-8 col-md-offset-2">
 		<iframe id="map" src="https://mapsengine.google.com/map/u/0/embed?mid=zSBBmPYybDpM.kgYSBLH1Ij-c"></iframe>
 	</div>
 </div>
 <div class="row">
-	<div class="col-md-10 col-md-offset-1 accordion" rel="1">
+	<div class="col-md-10 col-md-offset-1 accordion">
 		<h1 class="invisible">Direcciones</h1>
 		<!-- LOCALIZACION -->
 		<div class="accordion-title active">

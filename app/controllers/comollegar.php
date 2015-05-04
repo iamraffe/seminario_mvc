@@ -12,16 +12,17 @@ class ComoLlegar extends \core\controller{
 
 	public function index(){
 		$data['title'] = 'Cómo llegar';
+		$data['description'] = 'La segunda edición del seminario se llevará a cabo, al igual que la edición anterior, en el Aula Magna del Hospital Universitario Fundación Jiménez Diaz.';
 		$data['isComo-llegar'] = 'class="active"';
 		$data['js'] = "
 			<script type='text/javascript'>
-				$(document).ready(function($){	
+				$(document).ready(function($){
 					$('.accordion').each(function(){
 					    var acc = $(this).attr('rel') * 2;
 					    $(this).find('.accordion-inner:nth-child(' + acc + ')').show();
 					     $(this).find('.accordion-inner:nth-child(' + acc + ')').prev().addClass('active');
 					});
-					
+
 					$('.accordion .accordion-title').click(function() {
 					    if($(this).next().is(':hidden')) {
 					        $(this).parent().find('.accordion-title').removeClass('active').next().slideUp(200);

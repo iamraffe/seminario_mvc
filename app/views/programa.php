@@ -1,7 +1,8 @@
 <ul class="breadcrumb">
 	<li><span class="fa fa-home aqua"></span><a href="<?php echo DIR;?>"> Inicio</a></li>
-	<li><span class="fa fa-th-list"> Programa</li>
+	<li><span class="fa fa-th-list"></span> Programa</li>
 </ul>
+<h1 class="invisible"><?php echo $data['title']; ?></h1>
 <div class="row">
 	<div class="col-sm-10hcol-sm-offset-1 programa-seminario">
 		<div class="row">
@@ -72,7 +73,7 @@
 			</div>	
 		</div>
 		<div class="row light-gray-background">
-			<div class="col-md-9 col-md-offset-3 ">
+			<div class="col-md-9 col-md-offset-3">
 				<p class="programa-subtitle">Ponente</p>
 				<ul class="lista-ponentes">
 					<li>
@@ -120,7 +121,7 @@
 				<p>13:00h- 14:00h</p>
 			</div>
 			<div class="col-md-9 green-background program-event">
-				<p>Mesa redonda.</p> 
+				<p>Mesa redonda</p> 
 				<p>Sesión de debate sobre las ideas expuestas por los conferenciantes, con siete profesionales de gran prestigio en España</p>
 			</div>	
 		</div>
@@ -131,11 +132,11 @@
 					<li>
 						<p class="ponente-name">D. Adolfo Fernández-Valmayor</p>
 						<p>Director general de Organización, Procesos y TIC &amp; Digital, IDCsalud-Quirón.</p>
-					</li>			
+					</li>
 					<li>
 						<p class="ponente-name">Dr. D. Eduardo Fraile Moreno</p>
 						<p>Director técnico de la Unidad Central de Radiodiagnóstico de la Comunidad de Madrid.</p>
-					</li>							
+					</li>
 					<li>
 						<p class="ponente-name">Dr. D. Jesús García Foncillas</p>
 						<p>Director del Dpto. de Oncología del Hospital Universitario Fundación Jiménez Díaz, Madrid.</p>
@@ -147,18 +148,18 @@
 					<li>
 						<p class="ponente-name">Dra. Dña. Leticia Moral Iglesias</p>
 						<p>Directora corporativa de desarrollo asistencial, IDCsalud-Quirón.</p>
-					</li>		
+					</li>
 					<li>
 						<p class="ponente-name">Dr. D. José Luis de Sancho</p>
 						<p>Especialista en gestión sanitaria. Barcelona.</p>
-					</li>						
+					</li>
 					<li>
 						<p class="ponente-name">Dr. D. Gonzalo Varela Simó</p>
 						<p>Jefe del Servicio de Cirugía Torácica del Hospital Universitario de Salamanca.</p>
-					</li>			
+					</li>
 				</ul>
 				<p>Moderador: <span class="bold">Dr. D. Raimon Belenes Juárez</span>. Director corporativo de innovación, investigación y calidad, IDCsalud-Quirón.</p>
-			</div>	
+			</div>
 		</div>
 
 		<div class="row margin-top-10">
@@ -167,22 +168,22 @@
 			</div>
 			<div class="col-md-9 green-background program-event">
 				<p>Clausura y entrega del Premio a la Mejores Iniciativas en Seguridad del Paciente I Edición</p>
-			</div>	
+			</div>
 		</div>
 		<div class="row light-gray-background">
 			<div class="col-md-9 col-md-offset-3">
 				<p class="bold programa-subtitle">Entrega el premio la Dra. Dña. María Cordón Muro. Consejera de IDCsalud-Quirón.</p>
 
-			</div>	
-		</div>	
+			</div>
+		</div>
 		<div class="row margin-top-10">
 			<div class="col-md-3 program-time center green-background">
 				<p>14:30h- 15:30h</p>
 			</div>
 			<div class="col-md-9 green-background program-event">
 				<p>Refrigerio</p>
-			</div>	
+			</div>
 		</div>
 
 	</div>
-</div>		
+</div>

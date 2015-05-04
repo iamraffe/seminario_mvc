@@ -12,6 +12,7 @@ class Seminario extends \core\controller{
 
 	public function index(){
 		$data['title'] = '';
+		$data['description'] = 'El propósito del seminario es ofrecer a los asistentes la voz de unos ponentes de alta relevancia que difícilmente coincidirían en un acto debido a sus agendas';
 		$data['isBienvenida'] = 'class="active"';
 		View::rendertemplate('header', $data);
 		View::render('index', $data);

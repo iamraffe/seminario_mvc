@@ -287,6 +287,11 @@ footer a {
   left: 0;
   right: 0;
 }
+@media (max-width: 769px) {
+  .programa-seminario .programa-header .program-time p {
+    position: relative;
+  }
+}
 .programa-seminario .programa-subtitle {
   margin-top: 5px;
 }

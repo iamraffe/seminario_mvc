@@ -11,7 +11,7 @@
 					</div>
 					<div class="col-md-5 hidden-xs hidden-sm">
 						<!-- <img src="img/peps.svg" style="width: 85%;">  -->
-						<img src="img/raimon.png"> 
+						<img src="img/raimon.png" alt="Dr. D. Raimon Belenes Juárez, Director corporativo de innovación, investigación y calidad, IDCsalud-Quirón"> 
 					</div>
 				</div>
 			</div>	

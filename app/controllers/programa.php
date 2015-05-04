@@ -12,6 +12,7 @@ class Programa extends \core\controller{
 
 	public function index(){
 		$data['title'] = 'Programa';
+		$data['description'] = 'Nos centraremos en las estrategias y los programas para mejorar la calidad y la seguridad en un entorno en el que la innovación médica plantea nuevos retos';		
 		$data['isPrograma'] = 'class="active"';
 
 		View::rendertemplate('header', $data);

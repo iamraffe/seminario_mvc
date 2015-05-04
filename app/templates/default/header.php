@@ -6,17 +6,17 @@
 <!--[if gt IE 8]><!--> <html lang="<?php echo LANGUAGE_CODE; ?>"> <!--<![endif]-->
 <head>
 
-	<!-- Site meta -->
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="Rafael Ramirez Urbina (www.fundaseth.es)">
-  <meta name="designer" content="Rafael Ramirez Urbina (www.fundaseth.es)">
+    <!-- Site meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Rafael Ramirez Urbina (www.fundaseth.es)">
+    <meta name="designer" content="Rafael Ramirez Urbina (www.fundaseth.es)">
 	<title><?php if($data['title'] != ''){echo $data['title'].' | '.SITETITLE;}else{echo SITETITLE.' | El trato hospitalario del futuro';} ?></title>
 	<link rel="icon" type="image/png" href="img/favicon.png" />
-	<meta name="description" content="">
+	<meta name="description" content="<?php echo $data['description']; ?>">
 
 	<!-- CSS -->
 	<?php
@@ -30,6 +30,12 @@
 		))
 	?>
 
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
 <body>
 	<div class="container-fluid">
@@ -50,17 +56,17 @@
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 		      </button>
-		    		<a class="navbar-brand" href="<?php echo DIR;?>"><img class="logo-seminario" src="<?php echo DIR;?>/img/logoLogin.svg"></a>
+		    		<a class="navbar-brand" href="<?php echo DIR;?>"><img class="logo-seminario" src="<?php echo DIR;?>/img/logoLogin.svg" alt="2do Seminario Internacional de Seguridad del Paciente y Excelencia Clínica"><span class="invisible">Inicio</span></a>
 	      
 		    </div>
 		    <div class="collapse navbar-collapse" id="navbar-primary-collapse">
 		      <ul class="nav navbar-nav">
-		        <li <?php echo $data['isBienvenida'] ?>><a href="<?php echo DIR;?>">Bienvenida</a></li>
-		        <li <?php echo $data['isPrograma'] ?>><a href="<?php echo DIR;?>programa">Programa</a></li>
-		        <li <?php echo $data['isPonentes'] ?>><a href="<?php echo DIR;?>ponentes">Ponentes</a></li>
-		        <li <?php echo $data['isComo-llegar'] ?>><a href="<?php echo DIR;?>como-llegar">Cómo Llegar</a></li>
-		        <li <?php echo $data['isRegistro'] ?>><a href="<?php echo DIR;?>registro">Inscripción</a></li>
-		        <li <?php echo $data['isPremio'] ?>><a href="<?php echo DIR;?>premio">Premios</a></li>
+		        <li <?php echo $data['isBienvenida'] ?>><a href="<?php echo DIR;?>" title="Bienvenida">Bienvenida</a></li>
+		        <li <?php echo $data['isPrograma'] ?>><a href="<?php echo DIR;?>programa" title="Programa">Programa</a></li>
+		        <li <?php echo $data['isPonentes'] ?>><a href="<?php echo DIR;?>ponentes" title="Ponentes">Ponentes</a></li>
+		        <li <?php echo $data['isComo-llegar'] ?>><a href="<?php echo DIR;?>como-llegar" title="Cómo Llegar">Cómo Llegar</a></li>
+		        <li <?php echo $data['isRegistro'] ?>><a href="<?php echo DIR;?>registro" title="Inscripción">Inscripción</a></li>
+		        <li <?php echo $data['isPremio'] ?>><a href="<?php echo DIR;?>premio" title="Premios">Premios</a></li>
 		      </ul>
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->

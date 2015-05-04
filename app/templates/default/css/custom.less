@@ -304,7 +304,7 @@ img.logo-seminario{
     p{
       line-height: 1.75em;
       font-size: 1.25em;
-    }    
+    }
   }
 
     /* PROGRAMA */
@@ -315,16 +315,19 @@ img.logo-seminario{
     font-size: 1em;
   }
   .programa-header{
-    
+
     .program-time{
       position: relative;
       @media (min-width: 769px){
         min-height: 40px;
-      }      
+      }
       p{
         height: auto;
         position: absolute;
-        bottom: 0; top: 0; left: 0; right: 0; 
+        bottom: 0; top: 0; left: 0; right: 0;
+        @media (max-width: 769px){
+         position:relative;
+        }
       }
     }
   }

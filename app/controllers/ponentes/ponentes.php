@@ -12,6 +12,7 @@ class Ponentes extends \core\controller{
 
 	public function index(){
 		$data['title'] = 'Ponentes';
+		$data['description'] = 'Hemos incluido dos conferenciantes europeos (Bélgica y Noruega). Manteniendo un equilibrio entre las representaciones de Estados Unidos y las europeas.';
 		$data['isPonentes'] = 'class="active"';
 		$data['ponentes'] = $this->_model->getPonentes();
 

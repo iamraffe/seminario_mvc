@@ -7,7 +7,7 @@
 	<li><span class="fa fa-users aqua"></span><a href="<?php echo DIR;?>ponentes"> Ponentes</a></li>
 	<li><span class="fa fa-user-md"></span> <?php echo $row->ponenteName.' '.$row->ponenteApellidos ?></li>
 </ul>
-
+<h1 class="invisible"><?php echo $row->ponenteName.' '.$row->ponenteApellidos;?></h1>
 <div id="ponente" class="row">
 	<a href="<?php echo DIR;?>ponentes" class="btn btn-seminario-aqua"><span class="fa fa-arrow-left"></span> Atrás</a>
 	<div class="col-md-10 col-md-offset-1">

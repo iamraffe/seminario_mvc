@@ -14,6 +14,7 @@ class Registro extends \core\controller{
 
 	public function index(){
 		$data['title'] = 'Regístrate';
+		$data['description'] = 'En esta sección podrá inscribirse para participar en la segunda edición del seminario.';
 		$data['isRegistro'] = 'class="active"';
 		if(isset($_POST['submit'])){
 			$asistenteName = $_POST['asistenteName'];
