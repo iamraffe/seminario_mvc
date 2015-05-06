@@ -16,6 +16,10 @@ return array(
     'premios' => 'Awards',
     'choose_language' => 'Español',
     'terms' => 'Terms & Conditions',
+    'all-see' => '
+      <li>Thursday, May 28<sup>th</sup>, 2015</li>
+      <li>Hospital Universitario Fundación Jiménez Díaz (Madrid-Spain)</li>
+    ',
 
     //Footer
     'footer' => '<p class="bold">© 2<sup>nd</sup> International Seminar on Patient Safety and Clinical Excellence</p>

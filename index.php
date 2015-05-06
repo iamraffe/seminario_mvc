@@ -91,6 +91,7 @@ Router::any('admin/invitar/mass/(:num)', '\controllers\admin\invitar@massinvites
 
 //HOME
 Router::any('', '\controllers\seminario@index');
+Router::any('index', '\controllers\seminario@index');
 //PROGRAMA
 Router::any('programa', '\controllers\programa@index');
 //PONENTES
@@ -105,6 +106,8 @@ Router::any('registro', '\controllers\registro@index');
 Router::any('premio', '\controllers\premio@index');
 //CONDICIONES DE USO
 Router::any('condiciones', '\controllers\condiciones@index');
+
+Router::any('lang', '\controllers\seminario@lang');
 
 
 //if no route found

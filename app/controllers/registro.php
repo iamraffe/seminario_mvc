@@ -1,5 +1,7 @@
 <?php namespace controllers;
 
+use helpers\cookie;
+
 use \helpers\url,
 		\helpers\session,
 		\core\view;
@@ -13,7 +15,7 @@ class Registro extends \core\controller{
 	}
 
 	public function index(){
-		$data['title'] = 'Regístrate';
+		$data['title'] = \core\language::show('inscripcion', 'seminario_basic', \helpers\cookie::get('language')); 
 		$data['description'] = 'En esta sección podrá inscribirse para participar en la segunda edición del seminario.';
 		$data['isRegistro'] = 'class="active"';
 		if(isset($_POST['submit'])){

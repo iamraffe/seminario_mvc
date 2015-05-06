@@ -11,7 +11,7 @@ class ComoLlegar extends \core\controller{
 	}
 
 	public function index(){
-		$data['title'] = 'Cómo llegar';
+		$data['title'] = \core\language::show('como_llegar', 'seminario_basic', \helpers\cookie::get('language'));
 		$data['description'] = 'La segunda edición del seminario se llevará a cabo, al igual que la edición anterior, en el Aula Magna del Hospital Universitario Fundación Jiménez Diaz.';
 		$data['isComo-llegar'] = 'class="active"';
 		$data['js'] = "

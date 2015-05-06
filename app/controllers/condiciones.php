@@ -11,8 +11,8 @@ class Condiciones extends \core\controller{
 	}
 
 	public function index(){
-		$data['title'] = 'Condiciones de uso';
-		$data['title'] = 'Terminos y condiciones correspondientes a la página web del seminario.';
+		$data['title'] = \core\language::show('terms', LANGUAGE_INDEX, \helpers\cookie::get('language'));
+		$data['description'] = 'Terminos y condiciones correspondientes a la página web del seminario.';
 		View::rendertemplate('header', $data);
 		View::render('condiciones', $data);
 		View::rendertemplate('footer', $data);

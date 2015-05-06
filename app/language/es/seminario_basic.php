@@ -15,6 +15,10 @@ return array(
     'premios' => 'Premios',
     'choose_language' => 'English',
     'terms' => 'Condiciones de uso',
+    'all-see' => '
+      <li>Jueves, 28 de mayo de 2015</li>
+      <li>Hospital Universitario Fundación Jiménez Díaz (Madrid-España)</li>
+      ',
 
     //Footer
     'footer' => '<p class="bold">© 2<sup>o</sup> Seminario Internacional de Seguridad del Paciente y Excelencia Clínica</p>

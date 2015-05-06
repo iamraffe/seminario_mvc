@@ -1,18 +1,12 @@
 <ul class="breadcrumb">
-	<li><a href="<?php echo DIR;?>" title="Bienvenida"><span class="fa fa-home aqua"></span></a></li>
-	<li><span class="fa fa-users"></span> Ponentes</li>
+	<li><a href="<?php echo DIR;?>"><span class="fa fa-home aqua"></span></a></li>
+	<li><span class="fa fa-users"></span> <?php echo \core\language::show('ponentes', LANGUAGE_INDEX, \helpers\cookie::get('language')) ?></li>
 </ul>
 <h1 class="invisible"><?php echo $data['title']; ?></h1>
 <div class="row">
 	<div class="col-md-10 col-md-offset-1">
 		<?php
 			if($data['ponentes']){
-			/*	echo '<ul id="ponentes-list">';
-				foreach ($data['ponentes'] as $row) {
-					echo '<li class="ponente-name"><a href="'.DIR.$row->slug.'">'.$row->ponenteName.'</a></li>';
-					echo '<li>'.$row->ponenteCentro.'</li>';
-				}
-				echo '</ul>';*/
 				$counter = 1;
 				foreach ($data['ponentes'] as $row) {
 					if($counter % 4 == 0){
