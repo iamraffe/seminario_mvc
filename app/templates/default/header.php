@@ -20,13 +20,13 @@
 
 	<!-- CSS -->
 	<?php
-		helpers\assets::css(array(			
+		helpers\assets::css(array(
 			'//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css',
 			'//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css',
 			'//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css',
 			'//fonts.googleapis.com/css?family=Muli',
 			'//cdn.datatables.net/plug-ins/1.10.6/integration/bootstrap/3/dataTables.bootstrap.css',
-			helpers\url::template_path() . 'css/custom.css'			
+			helpers\url::template_path() . 'css/custom.css'
 		))
 	?>
 
@@ -43,6 +43,10 @@
 		<div id="logo-placeholder">
 			<div class="container">
 			  <a href="<?php echo DIR;?>"><img id="logo-seminario" src="img/logoSeminario.svg" alt="2do Seminario Internacional de Seguridad del Paciente y Excelencia Clínica"></a>
+              <ul class="right">
+                  <li>Jueves, 28 de mayo de 2015</li>
+                  <li>Hospital Universitario Fundación Jiménez Díaz (Madrid-España)</li>
+              </ul>
 			</div>
 		</div>
 		<nav id="navbar-primary" class="navbar navbar-default" role="navigation">
@@ -57,7 +61,6 @@
 		        <span class="icon-bar"></span>
 		      </button>
 		    		<a class="navbar-brand" href="<?php echo DIR;?>"><img class="logo-seminario" src="<?php echo DIR;?>/img/logoLogin.svg" alt="2do Seminario Internacional de Seguridad del Paciente y Excelencia Clínica"><span class="invisible">Inicio</span></a>
-	      
 		    </div>
 		    <div class="collapse navbar-collapse" id="navbar-primary-collapse">
 		      <ul class="nav navbar-nav">

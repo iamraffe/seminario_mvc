@@ -123,6 +123,9 @@ fieldset[disabled] .btn-seminario-aqua.active {
 .center h1 {
   margin-bottom: 10px;
 }
+.right {
+  text-align: right;
+}
 .invisible {
   display: none !important;
 }
@@ -159,6 +162,16 @@ img.logo-seminario {
   background-color: #4b4f54;
   display: block;
   overflow: hidden;
+}
+#logo-placeholder > .container {
+  position: relative;
+}
+#logo-placeholder > .container ul {
+  list-style-type: none;
+  color: white;
+  position: absolute;
+  bottom: 10px;
+  right: 0;
 }
 #logo-placeholder #logo-seminario {
   max-width: 65%;

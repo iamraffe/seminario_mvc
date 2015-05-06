@@ -75,8 +75,9 @@ class Registro extends \core\controller{
 				$mail->subject('Nuevo Registro en la Base de Datos [Seminario]');
 				$mail->body($body);
 				$mail->send();
-
-				$body = '<p>Su inscripción al 2<sup>o</sup> Seminario Internacionalde Seguridad del Paciente y Excelencia Clínica se ha realizado correctamente.</p>';
+				$body = '<img src="https://s3-eu-west-1.amazonaws.com/seminario/logoLogin.svg" alt="2do Seminario Internacional de Seguridad del Paciente y Excelencia Clínica"'
+				$body .= '<p>Su inscripción al 2<sup>o</sup> Seminario Internacional de Seguridad del Paciente y Excelencia Clínica se ha realizado correctamente.</p>';
+				$body .= '<p>Le esperamos el próximo Jueves 28 de Mayo en el Aula Magna del Hospital Universitario Fundación Jiménez Díaz a las 8:30h.</p>';
 				$body .= '<p>[Este es un mensaje automático - Por favor, no responda directamente a este correo]</p>';
 
 				$mail = new \helpers\phpmailer\mail();

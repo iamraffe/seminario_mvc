@@ -87,7 +87,7 @@ class Invitar extends \core\controller
 
     public function massinvites($howMany)
     {
-        for($i = 1; $i < 52; $i++){
+        for($i = 1; $i < 30; $i++){
             $data['row'] = $this->_model->getInvitado($i);
             $this->_model->sendInvite($data['row']);
         }

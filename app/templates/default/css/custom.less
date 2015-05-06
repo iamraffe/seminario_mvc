@@ -148,6 +148,10 @@ ul.breadcrumb{
   } 
 }
 
+.right{
+  text-align: right;
+}
+
 .invisible{
   display: none !important;
 }
@@ -171,7 +175,7 @@ ul.breadcrumb{
     display: none;
   }
   img{
-    
+
   }
 }
 
@@ -188,7 +192,17 @@ img.logo-seminario{
     background-color: @gray-dark;
     display: block;
     overflow: hidden;
-
+    
+    >.container{
+      position: relative;
+      ul{
+        list-style-type: none;
+        color: white;
+        position: absolute;
+        bottom: 10px;
+        right: 0;
+      }
+    }
     #logo-seminario {
       max-width: 65%; 
       padding: 2.5%; 
