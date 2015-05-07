@@ -21,6 +21,9 @@ class Language {
 	 * @param  string $code
 	 */
 	public function load($name, $code = LANGUAGE_CODE) {
+		if($code == ''){
+			$code = LANGUAGE_CODE;
+		}
 		
 		// lang file
 		$file = "app/language/$code/$name.php";

@@ -42,7 +42,7 @@
 		<header role="banner">
 		<div id="logo-placeholder">
 			<div class="container">
-			  <a href="<?php echo DIR;?>"><img id="logo-seminario" src="<?php echo DIR;?>img/logoSeminario_<?php echo \helpers\cookie::get('lang'); ?>.svg" alt="2do Seminario Internacional de Seguridad del Paciente y Excelencia Clínica"></a>
+			  <a href="<?php echo DIR;?>"><img id="logo-seminario" src="<?php echo DIR;?>img/logoSeminario_<?php echo \helpers\cookie::get('language'); ?>.svg" alt="2do Seminario Internacional de Seguridad del Paciente y Excelencia Clínica"></a>
               <ul class="right">
                 <?php echo \core\language::show('all-see', 'seminario_basic', \helpers\cookie::get('language')); ?>
               </ul>
