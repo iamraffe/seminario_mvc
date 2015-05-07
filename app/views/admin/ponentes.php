@@ -13,6 +13,7 @@
 		<th>Nombre completo</th>
 		<th>Centro</th>
 		<th>Biografía</th>
+		<th>Idioma</th>
 		<th>Opciones</th>
 	</tr>
 </thead>
@@ -23,6 +24,7 @@
 		<th>Nombre completo</th>
 		<th>Centro</th>
 		<th>Biografía</th>
+		<th>Idioma</th>
 		<th>Opciones</th>
 	</tr>
 </tfoot>
@@ -36,6 +38,7 @@
 			echo '<td>'.$row->ponenteName.' '.$row->ponenteApellidos.'</td>';
 			echo '<td>'.$row->ponenteCentro.'</td>';
 			echo '<td>'.$row->ponenteBio.'</td>';
+			echo '<td>'.$row->ponenteLang.'</td>';
 			echo '<td>
 							<a href="'.DIR.'admin/ponentes/edit/'.$row->ponenteID.'"><span class="glyphicon glyphicon-edit"></span></a>
 							<a href="javascript:delponente(\''.$row->ponenteID.'\', \''.$row->ponenteName.'\')"><span class="glyphicon glyphicon-remove"></span></a>

@@ -28,6 +28,10 @@ class Language {
 		// lang file
 		$file = "app/language/$code/$name.php";
 
+		if(strcmp($file, 'app/language//seminario_basic.php') == 0){
+			$file = "app/language/es/$name.php";
+		}
+
 		// check if is readable
 		if(is_readable($file)){
 
@@ -67,9 +71,13 @@ class Language {
 	 * @return string
 	 */
 	public function show($value, $name, $code = LANGUAGE_CODE) {
-		
+
 		// lang file
 		$file = "app/language/$code/$name.php";
+
+		if(strcmp($file, 'app/language//seminario_basic.php') == 0){
+			$file = "app/language/es/$name.php";
+		}
 
 		// check if is readable
 		if(is_readable($file)){

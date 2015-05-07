@@ -1,6 +1,6 @@
 <ul class="breadcrumb">
 	<li><a href="<?php echo DIR;?>"><span class="fa fa-home aqua"></span></a></li>
-	<li><span class="fa fa-file-text-o"></span> <?php echo \core\language::show('terms', LANGUAGE_INDEX, \helpers\cookie::get('language')) ?></li>
+	<li><span class="fa fa-file-text-o"></span> <?php echo \core\language::show('terms', LANGUAGE_INDEX, \helpers\cookie::get('choose_language')) ?></li>
 </ul>
 <h1 class="invisible"><?php echo $data['title']; ?></h1>
 	<div class="condiciones">	

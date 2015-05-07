@@ -11,7 +11,7 @@ return array(
     'bienvenida' => 'Greeting',
     'programa' => 'Program',
     'ponentes' => 'Speakers',
-    'como_llegar' => 'Directions',
+    'como_llegar' => 'Location',
     'inscripcion' => 'Register',
     'premios' => 'Awards',
     'choose_language' => 'Español',
@@ -29,22 +29,22 @@ return array(
     'date-and-place' => '<h2>Thursday, May 28<sup>th</sup>, 2015</h2><h2>Hospital Universitario Fundación Jiménez Díaz (Madrid-Spain)</h2>',
     'carta' => '
         <h3 class="letter-salutation bold">Dear healthcare professionals:</h3>
-        <p>We present the 2<sup>nd</sup> edition of the Seminar on Clinical Excellence and Patient
-        Safety, as a continuation of the 1<sup>st</sup> edition held in Madrid in April 2014,
-        with an excellent reception among healthcare professionals.</p>
+        <p>We are proud to present the 2<sup>nd</sup> edition of the International Seminar on Clinical Excellence and Patient
+        Safety, as a continuation of the 1<sup>st</sup> edition held on April of last year in Madrid,
+        with an excellent reception amongst healthcare professionals.</p>
         <p>The purpose of the seminar continues to be the same as last year: to offer
-        attendees, representing the plurality of professions, specialties and
+        attendees, who represent an important sample of the plurality of professions, specialties and
         interests within Spain, the voice and experience of speakers of great
         relevance and reputation, who would hardly coincide in one act due to their
         saturated agendas.</p>
         <p>The topics to be addressed by speakers will be identical to last year, as
-        they have not lost relevance. This way, we will focus on strategies and
+        they continue to have significant relevance. This way, we will focus on strategies and
         programs to improve quality and patient safety in an environment in which
         medical innovation poses new challenges and opportunities.</p>
         <p>Just last year there were two events that illustrate well the paradoxes of
         modern medicine: the epidemic of Ebola virus, a threat to global health, and
         the emergence of new, effective and expensive drugs for the treatment of
-        hepatitis C. All of this in a healthcare environment  filled with  threats
+        hepatitis C. All of this in a healthcare environment filled with threats
         and opportunities, where the strategies to achieve more appropriate
         "healthier medicine" based on evidence and powerful programs based on
         quality and safety improvement, continue to be at the center professional
@@ -52,9 +52,9 @@ return array(
         <p>In this edition of the seminar we have invited two European lecturers, from
         Belgium and Norway. Through their inclusion we are trying to maintain a
         stimulating balance between US and European representations, as well as
-        between managers of health institutions and leaders of thought and action.</p>
+        amongst managers of health institutions and leaders of thought and action.</p>
 
-        <p>We hope this professional gathering will be of interest.</p>
+        <p>We hope this gathering will be of interest.</p>
         <p class="bold">Dr. Raimon Belenes Juárez,</p>
         <p class="italic">Corporate Director of Innovation, Research and Quality, IDCsalud-Quir&oacute;n.</p>
     ',
@@ -67,7 +67,7 @@ return array(
             </div>
             <div class="col-md-9 green-background program-event">
                 <p>Credentials</p>
-            </div>  
+            </div>
         </div>
         <div class="row margin-top-10">
             <div class="col-md-3 program-time center green-background">
@@ -75,7 +75,7 @@ return array(
             </div>
             <div class="col-md-9 green-background program-event">
                 <p>Welcome, introduction and presentation of the seminar</p>
-            </div>  
+            </div>
         </div>
         <div class="row light-gray-background">
             <div class="col-md-9 col-md-offset-3 ">
@@ -94,8 +94,8 @@ return array(
                         <p>Corporate Director of Innovation, Research and Quality, IDCsalud-Quir&oacute;n.</p>
                     </li>
                 </ul>
-            </div>  
-        </div>  
+            </div>
+        </div>
 
         <div class="row programa-header margin-top-10">
             <div class="col-md-3 program-time center green-background">
@@ -104,7 +104,7 @@ return array(
             <div class="col-md-9 green-background program-event">
                 <p>1st Lecture</p>
                 <p>A proactive Approach to Patient Safety and Quality of Care</p>
-            </div>  
+            </div>
         </div>
         <div class="row light-gray-background">
             <div class="col-md-9 col-md-offset-3">
@@ -126,7 +126,7 @@ return array(
             <div class="col-md-9 green-background program-event">
                 <p>2nd Lecture</p>
                 <p>Promoting Safety as an Strategy Against Waste</p>
-            </div>  
+            </div>
         </div>
         <div class="row light-gray-background">
             <div class="col-md-9 col-md-offset-3 ">
@@ -138,7 +138,7 @@ return array(
                     </li>
                 </ul>
                 <p>Introduced by <span class="bold">Dra.  Lucía Alonso Pérez</span>. Territory Manager Madrid, IDCsalud-Quir&oacute;n.</p>
-            </div>  
+            </div>
         </div>
 
         <div class="row margin-top-10">
@@ -147,7 +147,7 @@ return array(
             </div>
             <div class="col-md-9 green-background program-event">
                 <p>Coffee Break</p>
-            </div>  
+            </div>
         </div>
 
         <div class="row programa-header margin-top-10">
@@ -157,7 +157,7 @@ return array(
             <div class="col-md-9 green-background program-event">
                 <p>3rd Lecture</p>
                 <p>The Experience of a Leader</p>
-            </div>  
+            </div>
         </div>
         <div class="row light-gray-background">
             <div class="col-md-9 col-md-offset-3 ">
@@ -168,8 +168,8 @@ return array(
                         <p>Former administrator of the Centers for Medicare and Medicaid Services (CMS), he was founder, President and CEO of the Institute for Healthcare Improvement, USA.</p>
                     </li>
                 </ul>
-                <p>Introduced by <span class="bold">Dr.  Raúl Muñiz García</span>. irector of Best Practices, IDCsalud-Quir&oacute;n.</p>
-            </div>  
+                <p>Introduced by <span class="bold">Dr.  Raúl Muñiz García</span>. Director of Best Practices, IDCsalud-Quir&oacute;n.</p>
+            </div>
         </div>
 
         <div class="row programa-header margin-top-10">
@@ -179,7 +179,7 @@ return array(
             <div class="col-md-9 green-background program-event">
                 <p>Roundtable</p>
                 <p>Six highly prestigious Spanish doctors discuss the ideas expressed by the previous speakers.</p>
-            </div>  
+            </div>
         </div>
         <div class="row light-gray-background">
             <div class="col-md-9 col-md-offset-3 ">
@@ -188,11 +188,11 @@ return array(
                     <li>
                         <p class="ponente-name"> Adolfo Fernández-Valmayor</p>
                         <p>Chief Information Officer, IDCsalud-Quir&oacute;n.</p>
-                    </li>           
+                    </li>
                     <li>
                         <p class="ponente-name">Dr.  Eduardo Fraile Moreno</p>
                         <p>Technical Director of the Central Unit of Radiology of the Comunidad de Madrid.</p>
-                    </li>                           
+                    </li>
                     <li>
                         <p class="ponente-name">Dr.  Jesús García Foncillas</p>
                         <p>Director of the Oncology Dept., Hospital Universitario Fundaci&oacute;n Jim&eacute;nez D&iacute;az, Madrid.</p>
@@ -204,18 +204,18 @@ return array(
                     <li>
                         <p class="ponente-name">Dra.  Leticia Moral Iglesias</p>
                         <p>Directora Corporativa de Desarrollo Asistencial, IDCsalud-Quir&oacute;n.</p>
-                    </li>       
+                    </li>
                     <li>
                         <p class="ponente-name">Dr.  José Luis de Sancho</p>
                         <p>Health management specialist. Barcelona.</p>
-                    </li>                       
+                    </li>
                     <li>
                         <p class="ponente-name">Dr.  Gonzalo Varela Simó</p>
                         <p>Head of the Thoracic Surgery Dept., Hospital Universitario de Salamanca.</p>
-                    </li>           
+                    </li>
                 </ul>
                 <p>Moderator: <span class="bold">Dr.  Raimon Belenes Juárez</span>. Corporate Director of Innovation, Research and Quality, IDCsalud-Quir&oacute;n.</p>
-            </div>  
+            </div>
         </div>
 
         <div class="row margin-top-10">
@@ -224,22 +224,22 @@ return array(
             </div>
             <div class="col-md-9 green-background program-event">
                 <p>Closing Remarks and Prize Awards to Best Initiatives in Patient Safety 1st Edition</p>
-            </div>  
+            </div>
         </div>
         <div class="row light-gray-background">
             <div class="col-md-9 col-md-offset-3">
                 <p class="bold programa-subtitle">Presents the Award Dr. Mar&iacute;a Cord&oacute;n Muro, Member of the Board, IDCsalud-Quir&oacute;n.</p>
 
-            </div>  
-        </div>  
+            </div>
+        </div>
         <div class="row margin-top-10">
             <div class="col-md-3 program-time center green-background">
                 <p>14:30h- 15:30h</p>
             </div>
             <div class="col-md-9 green-background program-event">
                 <p>Luncheon</p>
-            </div>  
-        </div> 
+            </div>
+        </div>
         ',
 
     //Como llegar
@@ -259,7 +259,7 @@ return array(
                 <div class="col-md-5 col-sm-3">
                     <img src="img/logo-fundacion-jimenez-diaz.jpeg" alt="Fundación Jiménez Díaz">
                 </div>
-            </div>                  
+            </div>
         </div>
         <!-- METRO -->
         <div class="accordion-title">
@@ -270,16 +270,16 @@ return array(
                 <div class="col-sm-3 col-md-offset-1 col-sm-offset-1">
                     <!-- <img src="img/icono-metro.png" alt="Metro de Madrid"> -->
                     <span class="fa fa-subway fa-5x aqua block center margin-top-10"></span>
-                </div>          
+                </div>
                 <div class="col-sm-6">
                     <ul class="margin-top-10">
                         <li>Moncloa</li>
                         <li>Islas Filipinas</li>
                     </ul>
                 </div>
-            </div>                  
+            </div>
         </div>
-        <!-- BUS -->    
+        <!-- BUS -->
         <div class="accordion-title">
             <h2><a href="#">Directions to the venue by bus</a></h2>
         </div>
@@ -288,7 +288,7 @@ return array(
                 <div class="col-sm-2 col-md-offset-1 col-sm-offset-1">
                     <!-- <img src="img/icono-autobus.png" alt="Autobuses de Madrid"> -->
                     <span class="fa fa-bus fa-5x aqua block center margin-top-10"></span>
-                </div>          
+                </div>
                 <div class="col-sm-4">
                     <ul  class="margin-top-10">
                         <li>Bus Line 1</li>
@@ -316,73 +316,67 @@ return array(
                     <legend style="display: none;"></legend>
 
                     <div class="form-group">
-                      <label class="col-md-4 control-label" for="nombre"></label>  
+                      <label class="col-md-4 control-label" for="nombre"></label>
                       <div class="col-md-4">
                       <input id="asistenteName" name="asistenteName" type="text" placeholder="Name" class="form-control input-md" required="">
                       </div>
                     </div>
 
                     <div class="form-group">
-                      <label class="col-md-4 control-label" for="asistentePrimerApellido"></label>  
+                      <label class="col-md-4 control-label" for="asistentePrimerApellido"></label>
                       <div class="col-md-4">
                       <input id="asistentePrimerApellido" name="asistentePrimerApellido" type="text" placeholder="Primary Last Name" class="form-control input-md" required="">
-                        
+
                       </div>
                     </div>
 
                     <div class="form-group">
-                      <label class="col-md-4 control-label" for="asistenteSegundoApellido"></label>  
+                      <label class="col-md-4 control-label" for="asistenteSegundoApellido"></label>
                       <div class="col-md-4">
                       <input id="asistenteSegundoApellido" name="asistenteSegundoApellido" type="text" placeholder="Second Last Name" class="form-control input-md">
-                        
+
                       </div>
                     </div>
 
                     <div class="form-group">
-                      <label class="col-md-4 control-label" for="asistenteCiudad"></label>  
+                      <label class="col-md-4 control-label" for="asistenteCiudad"></label>
                       <div class="col-md-4">
                       <input id="asistenteCiudad" name="asistenteCiudad" type="text" placeholder="City" class="form-control input-md" required="">
-                        
                       </div>
                     </div>
 
                     <div class="form-group">
-                      <label class="col-md-4 control-label" for="asistenteCentro"></label>  
+                      <label class="col-md-4 control-label" for="asistenteCentro"></label>
                       <div class="col-md-4">
                       <input id="asistenteCentro" name="asistenteCentro" type="text" placeholder="Center" class="form-control input-md" required="">
-                        
                       </div>
                     </div>
 
                     <div class="form-group">
-                      <label class="col-md-4 control-label" for="asistenteCargo"></label>  
+                      <label class="col-md-4 control-label" for="asistenteCargo"></label>
                       <div class="col-md-4">
                       <input id="asistenteCargo" name="asistenteCargo" type="text" placeholder="Position" class="form-control input-md" required="">
-                        
                       </div>
                     </div>
 
                     <div class="form-group">
-                      <label class="col-md-4 control-label" for="asistenteEmail"></label>  
+                      <label class="col-md-4 control-label" for="asistenteEmail"></label>
                       <div class="col-md-4">
                       <input id="asistenteEmail" name="asistenteEmail" type="text" placeholder="Email" class="form-control input-md" required="">
-                        
                       </div>
                     </div>
 
                     <div class="form-group">
-                      <label class="col-md-4 control-label" for="asistenteTelefono"></label>  
+                      <label class="col-md-4 control-label" for="asistenteTelefono"></label>
                       <div class="col-md-4">
                       <input id="asistenteTelefono" name="asistenteTelefono" type="text" placeholder="Phone number" class="form-control input-md" required="">
-                        
                       </div>
                     </div>
 
                     <div class="form-group">
-                      <label class="col-md-4 control-label" for="asistenteTelefonoSecundario"></label>  
+                      <label class="col-md-4 control-label" for="asistenteTelefonoSecundario"></label>
                       <div class="col-md-4">
                       <input id="asistenteTelefonoSecundario" name="asistenteTelefonoSecundario" type="text" placeholder="Secondary phone number" class="form-control input-md">
-                        
                       </div>
                     </div>
 
@@ -399,7 +393,7 @@ return array(
     //Premios
     'prizes' => '
         <h2 class="aqua" style="font-size: 1.75em;">First Edition of the IDCsalud-Quirón Award for the Best Initiatives for Patient Safety</h2>
-        <p class="bold">As a part of the International Seminar the counselor of IDCsalud-Quiron, Dr. Maria Cordon Muro, will present the awards.</p>               
+        <p class="bold">As a part of the International Seminar the counselor of IDCsalud-Quiron, Dr. Maria Cordon Muro, will present the awards.</p>
         <p class="bold">The deadline for applications is May 10<sup>th</sup>, 2015</p>
         <p>The IDCsalud-Quirón Group has launched the first edition of the Award for the Best Initiatives for Patient Safety. With this event, the Group aims to promote the development of safe practices for users and health professionals, recognizing economically the best projects in 2014 and 2015. The deadline for nominations for the awards, whose bases you can check by visiting <a href="http://www.idcsalud.es" title="idcsalud">idcsalud.es</a> or <a href="http://www.quiron.es" title="quiron salud">quiron.es</a>, is until May 10<sup>th</sup>.</p>
         <img src="img/premios.jpg">

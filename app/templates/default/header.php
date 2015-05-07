@@ -42,9 +42,9 @@
 		<header role="banner">
 		<div id="logo-placeholder">
 			<div class="container">
-			  <a href="<?php echo DIR;?>"><img id="logo-seminario" src="<?php echo DIR;?>img/logoSeminario_<?php echo \helpers\cookie::get('language'); ?>.svg" alt="2do Seminario Internacional de Seguridad del Paciente y Excelencia Clínica"></a>
+			  <a href="<?php echo DIR;?>"><img id="logo-seminario" src="<?php echo DIR;?>img/logoSeminario<?php if(\helpers\cookie::get('choose_language')) echo '_'.\helpers\cookie::get('choose_language'); ?>.svg" alt="2do Seminario Internacional de Seguridad del Paciente y Excelencia Clínica"></a>
               <ul class="right">
-                <?php echo \core\language::show('all-see', 'seminario_basic', \helpers\cookie::get('language')); ?>
+                <?php echo \core\language::show('all-see', 'seminario_basic', \helpers\cookie::get('choose_language')); ?>
               </ul>
 			</div>
 		</div>
@@ -63,13 +63,13 @@
 		    </div>
 		    <div class="collapse navbar-collapse" id="navbar-primary-collapse">
 		      <ul class="nav navbar-nav">
-		        <li <?php echo $data['isBienvenida'] ?>><a href="<?php echo DIR;?>" title="<?php echo \core\language::show('bienvenida', 'seminario_basic', \helpers\cookie::get('language')); ?>"><?php echo \core\language::show('bienvenida', 'seminario_basic', \helpers\cookie::get('language')); ?></a></li>
-		        <li <?php echo $data['isPrograma'] ?>><a href="<?php echo DIR;?>programa" title="<?php echo \core\language::show('programa', 'seminario_basic', \helpers\cookie::get('language')); ?>"><?php echo \core\language::show('programa', 'seminario_basic', \helpers\cookie::get('language')); ?></a></li>
-		        <li <?php echo $data['isPonentes'] ?>><a href="<?php echo DIR;?>ponentes" title="<?php echo \core\language::show('ponentes', 'seminario_basic', \helpers\cookie::get('language')); ?>"><?php echo \core\language::show('ponentes', 'seminario_basic', \helpers\cookie::get('language')); ?></a></li>
-		        <li <?php echo $data['isComo-llegar'] ?>><a href="<?php echo DIR;?>como-llegar" title="<?php echo \core\language::show('como_llegar', 'seminario_basic', \helpers\cookie::get('language')); ?>"><?php echo \core\language::show('como_llegar', 'seminario_basic', \helpers\cookie::get('language')); ?></a></li>
-		        <li <?php echo $data['isRegistro'] ?>><a href="<?php echo DIR;?>registro" title="<?php echo \core\language::show('inscripcion', 'seminario_basic', \helpers\cookie::get('language')); ?>"><?php echo \core\language::show('inscripcion', 'seminario_basic', \helpers\cookie::get('language')); ?></a></li>
-		        <li <?php echo $data['isPremio'] ?>><a href="<?php echo DIR;?>premio" title="<?php echo \core\language::show('premios', 'seminario_basic', \helpers\cookie::get('language')); ?>"><?php echo \core\language::show('premios', 'seminario_basic', \helpers\cookie::get('language')); ?></a></li>
-                <li><a href="<?php echo DIR;?>lang" title="<?php echo \core\language::show('choose_language', 'seminario_basic', \helpers\cookie::get('language')); ?>"><?php echo \core\language::show('choose_language', 'seminario_basic', \helpers\cookie::get('language')); ?></a></li>
+		        <li <?php echo $data['isBienvenida'] ?>><a href="<?php echo DIR;?>" title="<?php echo \core\language::show('bienvenida', 'seminario_basic', \helpers\cookie::get('choose_language')); ?>"><?php echo \core\language::show('bienvenida', 'seminario_basic', \helpers\cookie::get('choose_language')); ?></a></li>
+		        <li <?php echo $data['isPrograma'] ?>><a href="<?php echo DIR;?>programa" title="<?php echo \core\language::show('programa', 'seminario_basic', \helpers\cookie::get('choose_language')); ?>"><?php echo \core\language::show('programa', 'seminario_basic', \helpers\cookie::get('choose_language')); ?></a></li>
+		        <li <?php echo $data['isPonentes'] ?>><a href="<?php echo DIR;?>ponentes" title="<?php echo \core\language::show('ponentes', 'seminario_basic', \helpers\cookie::get('choose_language')); ?>"><?php echo \core\language::show('ponentes', 'seminario_basic', \helpers\cookie::get('choose_language')); ?></a></li>
+		        <li <?php echo $data['isComo-llegar'] ?>><a href="<?php echo DIR;?>como-llegar" title="<?php echo \core\language::show('como_llegar', 'seminario_basic', \helpers\cookie::get('choose_language')); ?>"><?php echo \core\language::show('como_llegar', 'seminario_basic', \helpers\cookie::get('choose_language')); ?></a></li>
+		        <li <?php echo $data['isRegistro'] ?>><a href="<?php echo DIR;?>registro" title="<?php echo \core\language::show('inscripcion', 'seminario_basic', \helpers\cookie::get('choose_language')); ?>"><?php echo \core\language::show('inscripcion', 'seminario_basic', \helpers\cookie::get('choose_language')); ?></a></li>
+		        <li <?php echo $data['isPremio'] ?>><a href="<?php echo DIR;?>premio" title="<?php echo \core\language::show('premios', 'seminario_basic', \helpers\cookie::get('choose_language')); ?>"><?php echo \core\language::show('premios', 'seminario_basic', \helpers\cookie::get('choose_language')); ?></a></li>
+                <li><a href="<?php echo DIR;?>lang" title="<?php echo \core\language::show('choose_language', 'seminario_basic', \helpers\cookie::get('choose_language')); ?>"><?php echo \core\language::show('choose_language', 'seminario_basic', \helpers\cookie::get('choose_language')); ?></a></li>
 		      </ul>
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->

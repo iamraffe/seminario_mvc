@@ -24,15 +24,13 @@ class Seminario extends \core\controller{
 
 	}
 	public function lang(){
-		if(strcmp(Cookie::get('language'), 'es') == 0){
-			Cookie::set('language', 'en');
+		if(strcmp(Cookie::get('choose_language'), 'es') == 0){
+			Cookie::set('choose_language', 'en');
 			//setcookie('lang', 'en', time() + (86400 * 30), "/");
 		}
 		else{
-			Cookie::set('language', 'es');
-			//setcookie('lang', 'es', time() + (86400 * 30), "/");
-		}
-		//setcookie('lang', 'en', time() + (86400 * 30), "/");
+			Cookie::set('choose_language', 'es');
+		}		
 		Url::previous();
 	}
 }

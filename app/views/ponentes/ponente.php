@@ -3,8 +3,8 @@
 		foreach ($data['ponente'] as $row) {
 ?>
 <ul class="breadcrumb">
-	<li><span class="fa fa-home aqua"></span><a href="<?php echo DIR;?>"> Inicio</a></li>
-	<li><span class="fa fa-users aqua"></span><a href="<?php echo DIR;?>ponentes"> Ponentes</a></li>
+	<li><a href="<?php echo DIR;?>"> <span class="fa fa-home aqua"></span></a></li>
+	<li><span class="fa fa-users aqua"></span><a href="<?php echo DIR;?>ponentes"> <?php echo \core\language::show('ponentes', LANGUAGE_INDEX, \helpers\cookie::get('choose_language')) ?></a></li>
 	<li><span class="fa fa-user-md"></span> <?php echo $row->ponenteName.' '.$row->ponenteApellidos ?></li>
 </ul>
 <h1 class="invisible"><?php echo $row->ponenteName.' '.$row->ponenteApellidos;?></h1>

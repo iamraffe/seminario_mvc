@@ -4,7 +4,7 @@
 	<footer>
 		<div class="container">
 			<div class="row">
-				<?php echo \core\language::show('footer', LANGUAGE_INDEX, \helpers\cookie::get('language')) ?>
+				<?php echo \core\language::show('footer', LANGUAGE_INDEX, \helpers\cookie::get('choose_language')) ?>
 			</div>
 		</div>
 	</footer>
@@ -27,35 +27,6 @@
 
       ga('create', 'UA-62580041-1', 'auto');
       ga('send', 'pageview');
-      /*  function setCookie(cname, cvalue, exdays) {
-            var d = new Date();
-            d.setTime(d.getTime() + (exdays*24*60*60*1000));
-            var expires = "expires="+d.toUTCString();
-            document.cookie = cname + "=" + cvalue + "; " + expires;
-        }
-
-        function getCookie(cname) {
-            var name = cname + "=";
-            var ca = document.cookie.split(';');
-            for(var i=0; i<ca.length; i++) {
-                var c = ca[i];
-                while (c.charAt(0)==' ') c = c.substring(1);
-                if (c.indexOf(name) == 0) return c.substring(name.length, c.length);
-            }
-            return "";
-        }
-
-        function checkCookie() {
-            var language = getCookie("language");
-            if (language != "") {
-                //alert("Welcome again " + user);
-                setCookie("language", "es", 365);
-            } else {
-                if (user != "" && user != null) {
-                    setCookie("username", user, 365);
-                }
-            }
-        }*/
     </script>
 </body>
 </html>

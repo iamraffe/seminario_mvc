@@ -10,7 +10,7 @@ class Ponentes extends \core\controller{
 	function __construct()	{
 		if(!Session::get('loggedin')){
 			Url::redirect('admin/login');
-		}				
+		}
 		$this->_model = new \models\admin\ponentes();
 	}
 
@@ -24,14 +24,14 @@ class Ponentes extends \core\controller{
 		            'language': {
 		                'url': 'dataTables.german.lang'
 		            }
-		        } );		
-		      } );  	
+		        } );
+		      } );
 					function delponente(id, name){
 						if(confirm('¿Está seguro de que desea eliminar el ponente '+ name)){
 							window.location.href = '".DIR."admin/ponentes/delete/'+id;
 						}
 					}
-				</script>				
+				</script>
 		";
 
 		View::renderadmintemplate('header', $data);

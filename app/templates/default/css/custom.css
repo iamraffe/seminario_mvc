@@ -173,7 +173,7 @@ img.logo-seminario {
   bottom: 10px;
   right: 0;
 }
-@media (max-width: 768px) {
+@media (max-width: 1023px) {
   #logo-placeholder > .container ul {
     display: none;
   }
@@ -183,7 +183,7 @@ img.logo-seminario {
   padding: 2.5%;
   float: left;
 }
-@media (max-width: 768px) {
+@media (max-width: 1023px) {
   #logo-placeholder #logo-seminario {
     display: block;
     margin: 0 auto;
@@ -329,7 +329,7 @@ footer a {
 .programa-seminario ul.lista-ponentes li .ponente-name {
   font-weight: bold;
 }
-@media (max-width: 768px) {
+@media (max-width: 1023px) {
   .programa-seminario .program-event {
     text-align: center;
   }
